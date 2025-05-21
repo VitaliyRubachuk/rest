@@ -1,7 +1,7 @@
 services:
   - type: web
     name: rest-backend
-    env: java
+    environment: java
     region: frankfurt # Або ваш регіон
     rootDir: course/
     buildCommand: mvn clean install -DskipTests
