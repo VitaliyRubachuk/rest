@@ -2,7 +2,7 @@
 services:
   - type: web
     name: rest-backend
-    env: java
+    buildpack: https://github.com/render-examples/java-maven-buildpack.git
     region: frankfurt
     rootDir: course/
     buildCommand: mvn clean install -DskipTests
