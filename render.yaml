@@ -1,8 +1,9 @@
+---
 services:
   - type: web
     name: rest-backend
     environment: java
-    region: frankfurt # Або ваш регіон
+    region: frankfurt
     rootDir: course/
     buildCommand: mvn clean install -DskipTests
     startCommand: java -jar target/course-0.0.1-SNAPSHOT.jar
@@ -11,36 +12,35 @@ services:
         value: "21"
       - key: SERVER_PORT
         value: "10000"
-      # Додайте всі ваші інші змінні середовища тут
       - key: SPRING_DATASOURCE_URL
-        value: "jdbc:postgresql://dpg-d0msgb6mcj7s739jslu0-a.frankfurt-postgres.render.com/rest_db_j9co"
+        value: jdbc:postgresql://dpg-d0msgb6mcj7s739jslu0-a.frankfurt-postgres.render.com/rest_db_j9co
       - key: SPRING_DATASOURCE_USERNAME
-        value: "rest_db_j9co_user"
+        value: rest_db_j9co_user
       - key: SPRING_DATASOURCE_PASSWORD
-        value: "dxrdXLcXE3f0GYVLBcis4WUXIjxbgsvC"
+        value: dxrdXLcXE3f0GYVLBcis4WUXIjxbgsvC
       - key: SPRING_DATASOURCE_DRIVER_CLASS_NAME
-        value: "org.postgresql.Driver"
+        value: org.postgresql.Driver
       - key: SPRING_JPA_DATABASE_PLATFORM
-        value: "org.hibernate.dialect.PostgreSQLDialect"
+        value: org.hibernate.dialect.PostgreSQLDialect
       - key: SPRING_JPA_HIBERNATE_DDL_AUTO
-        value: "update"
+        value: update
       - key: SPRING_JPA_SHOW_SQL
         value: "true"
       - key: JWT_SECRET
-        value: "eW91ci1zdXBlci1zZWNyZXQtand0LWtleS10aGF0LXNob3VsZC1iZS12ZXJ5LWxvbmc="
+        value: eW91ci1zdXBlci1zZWNyZXQtand0LWtleS10aGF0LXNob3VsZC1iZS12ZXJ5LWxvbmc=
       - key: JWT_EXPIRATION
         value: "86400000"
       - key: JWT_REFRESH_TOKEN_EXPIRATION
         value: "604800000"
       - key: FILE_UPLOAD_DIR
-        value: "/opt/render/project/src/uploads_data/images/dishes"
+        value: /opt/render/project/src/uploads_data/images/dishes
       - key: FILE_URL_PREFIX
-        value: "/uploads/images/dishes"
+        value: /uploads/images/dishes
       - key: SPRING_WEB_RESOURCES_STATIC_LOCATIONS
-        value: "classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/,file:/opt/render/project/src/uploads_data/"
+        value: classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/,file:/opt/render/project/src/uploads_data/
       - key: SPRING_MVC_STATIC_PATH_PATTERN
-        value: "/uploads/**"
+        value: /uploads/**
       - key: SPRING_SERVLET_MULTIPART_MAX_FILE_SIZE
-        value: "10MB"
+        value: 10MB
       - key: SPRING_SERVLET_MULTIPART_MAX_REQUEST_SIZE
-        value: "10MB"
+        value: 10MB
