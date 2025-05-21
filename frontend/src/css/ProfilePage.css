@@ -1,0 +1,155 @@
+.profile-container {
+    padding: 30px;
+    background-color: #2a2a2a; /* Темний фон */
+    min-height: calc(100vh - 60px); /* Adjust based on header/footer height */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align to top */
+    color: #f0f0f0;
+}
+
+.profile-card {
+    background: linear-gradient(145deg, #3a3a3a, #2a2a2a); /* Неоморфічний градієнт */
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4),
+    -10px -10px 20px rgba(70, 70, 70, 0.2); /* Неоморфічні тіні */
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Легка рамка */
+}
+
+.profile-card h2 {
+    color: #03dac6; /* Акцентний колір */
+    margin-bottom: 30px;
+    font-size: 2.8em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.profile-info-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: linear-gradient(145deg, #303030, #202020); /* Внутрішній градієнт */
+    border-radius: 15px;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+    inset -5px -5px 10px rgba(70, 70, 70, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.profile-info-section p {
+    font-size: 1.2em;
+    color: #e0e0e0;
+    margin-bottom: 10px;
+}
+
+.profile-info-section p:last-child {
+    margin-bottom: 0;
+}
+
+.profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+    padding: 20px;
+    background: linear-gradient(145deg, #303030, #202020); /* Внутрішній градієнт для форм */
+    border-radius: 15px;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+    inset -5px -5px 10px rgba(70, 70, 70, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.form-group {
+    text-align: left;
+}
+
+.profile-input {
+    width: calc(100% - 20px);
+    padding: 12px 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #444; /* Темніший колір вводу */
+    color: #f0f0f0;
+    font-size: 1.1em;
+    box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.4),
+    inset -3px -3px 6px rgba(70, 70, 70, 0.1); /* Внутрішні тіні для input */
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.profile-input:focus {
+    background-color: #555;
+    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.6),
+    inset -2px -2px 4px rgba(70, 70, 70, 0.05),
+    0 0 0 2px #03dac6; /* Підсвічування фокусу */
+}
+
+.profile-input::placeholder {
+    color: #aaa;
+}
+
+.profile-button {
+    background: linear-gradient(145deg, #03dac6, #018786); /* Неоморфічний градієнт для кнопки */
+    color: #333;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3),
+    -5px -5px 10px rgba(70, 70, 70, 0.1); /* Зовнішні тіні для кнопки */
+}
+
+.profile-button:hover {
+    background: linear-gradient(145deg, #018786, #03dac6);
+    transform: translateY(-2px);
+    box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.4),
+    -7px -7px 15px rgba(70, 70, 70, 0.15);
+}
+
+.profile-button:active {
+    transform: translateY(0);
+    box-shadow: inset 3px 3px 7px rgba(0, 0, 0, 0.5),
+    inset -3px -3px 7px rgba(70, 70, 70, 0.05);
+}
+
+.password-change-section {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.password-toggle-button {
+    margin-bottom: 20px;
+}
+
+.password-form {
+    margin-top: 20px;
+}
+
+.success-message {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.error-message {
+    background-color: #f44336;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #bb86fc; /* Акцентний колір для лейблів */
+    font-size: 1em;
+}

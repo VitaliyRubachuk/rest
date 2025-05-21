@@ -1,0 +1,203 @@
+2025-05-18 20:28:06 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /api/tables/available
+2025-05-18 20:28:06 - DEBUG - o.c.config.JwtAuthenticationFilter - Processing request: GET /api/tables/available
+2025-05-18 20:28:06 - DEBUG - o.c.config.JwtAuthenticationFilter - Authorization header missing or not Bearer token. Skipping JWT filter.
+2025-05-18 20:28:06 - DEBUG - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-18 20:28:06 - DEBUG - o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2025-05-18 20:28:06 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /error
+2025-05-18 20:28:06 - DEBUG - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-18 20:28:06 - DEBUG - o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2025-05-18 20:28:09 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-18 20:28:09 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-18 20:28:16 - DEBUG - o.s.security.web.FilterChainProxy - Securing POST /api/users
+2025-05-18 20:28:16 - DEBUG - o.c.config.JwtAuthenticationFilter - Processing request: POST /api/users
+2025-05-18 20:28:16 - DEBUG - o.c.config.JwtAuthenticationFilter - Authorization header missing or not Bearer token. Skipping JWT filter.
+2025-05-18 20:28:16 - DEBUG - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-18 20:28:16 - DEBUG - o.s.security.web.FilterChainProxy - Secured POST /api/users
+2025-05-18 20:28:16 - INFO - org.course.service.UserService - Створення користувача з ім'ям: test@t
+2025-05-18 20:28:16 - INFO - org.course.service.UserService - Користувача створено успішно з ID: 2
+2025-05-18 20:28:16 - DEBUG - o.s.security.web.FilterChainProxy - Securing POST /api/auth/login
+2025-05-18 20:28:16 - DEBUG - o.c.config.JwtAuthenticationFilter - Processing request: POST /api/auth/login
+2025-05-18 20:28:16 - DEBUG - o.c.config.JwtAuthenticationFilter - Authorization header missing or not Bearer token. Skipping JWT filter.
+2025-05-18 20:28:16 - DEBUG - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-18 20:28:16 - DEBUG - o.s.security.web.FilterChainProxy - Secured POST /api/auth/login
+2025-05-18 20:28:16 - INFO - o.course.controller.AuthController - Отримано запит на логін для email: test@t
+2025-05-18 20:28:16 - DEBUG - o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2025-05-18 20:28:16 - DEBUG - o.course.controller.AuthController - Аутентифікація успішна для користувача: test@t
+2025-05-18 20:28:16 - INFO - org.course.service.JwtService - Generating token for user: test@t
+2025-05-18 20:28:16 - INFO - org.course.service.JwtService - Issued At: Sun May 18 20:28:16 EEST 2025
+2025-05-18 20:28:16 - INFO - org.course.service.JwtService - Expiration Date: Mon May 19 20:28:16 EEST 2025
+2025-05-18 20:28:16 - INFO - org.course.service.JwtService - jwtExpiration value (ms): 86400000
+2025-05-18 20:28:16 - INFO - o.course.controller.AuthController - Логін успішний. Згенеровано access token та refresh token.
+2025-05-18 20:28:16 - INFO - o.course.controller.AuthController - Завершено обробку запиту на логін для email: test@t
+2025-05-18 20:28:18 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /api/tables/available
+2025-05-18 20:28:18 - DEBUG - o.c.config.JwtAuthenticationFilter - Processing request: GET /api/tables/available
+2025-05-18 20:28:18 - DEBUG - o.c.config.JwtAuthenticationFilter - Extracted JWT token: eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVVNFUiIsInN1YiI6InRlc3RAdCIsImlhdCI6MTc0NzU4OTI5NiwiZXhwIjoxNzQ3Njc1Njk2fQ.cJ8XBHEYp9HHtZ7zcHyrbKf8gsxwPFKgmyNY3-vKWzM
+2025-05-18 20:28:18 - DEBUG - o.c.config.JwtAuthenticationFilter - Extracted username from token: test@t
+2025-05-18 20:28:18 - DEBUG - o.c.config.JwtAuthenticationFilter - Username found and SecurityContext is null. Loading UserDetails...
+2025-05-18 20:28:18 - DEBUG - o.c.config.JwtAuthenticationFilter - Loaded UserDetails: User(id=2, name=test@t, email=test@t, role=USER)
+2025-05-18 20:28:18 - INFO - o.c.config.JwtAuthenticationFilter - Token is valid for user: test@t. Authorities: [ROLE_USER]
+2025-05-18 20:28:18 - INFO - o.c.config.JwtAuthenticationFilter - SecurityContextHolder updated for user: test@t
+2025-05-18 20:28:18 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /api/tables/available
+2025-05-18 20:28:18 - INFO - org.course.service.TableService - Отримання списку вільних столиків...
+2025-05-18 20:28:18 - INFO - org.course.service.TableService - Знайдено 1 вільних столиків
+2025-05-18 20:28:20 - DEBUG - o.s.security.web.FilterChainProxy - Securing OPTIONS /api/tables/1/reserve
+2025-05-18 20:28:20 - DEBUG - o.s.security.web.FilterChainProxy - Securing POST /api/tables/1/reserve
+2025-05-18 20:28:20 - DEBUG - o.c.config.JwtAuthenticationFilter - Processing request: POST /api/tables/1/reserve
+2025-05-18 20:28:20 - DEBUG - o.c.config.JwtAuthenticationFilter - Extracted JWT token: eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVVNFUiIsInN1YiI6InRlc3RAdCIsImlhdCI6MTc0NzU4OTI5NiwiZXhwIjoxNzQ3Njc1Njk2fQ.cJ8XBHEYp9HHtZ7zcHyrbKf8gsxwPFKgmyNY3-vKWzM
+2025-05-18 20:28:20 - DEBUG - o.c.config.JwtAuthenticationFilter - Extracted username from token: test@t
+2025-05-18 20:28:20 - DEBUG - o.c.config.JwtAuthenticationFilter - Username found and SecurityContext is null. Loading UserDetails...
+2025-05-18 20:28:20 - DEBUG - o.c.config.JwtAuthenticationFilter - Loaded UserDetails: User(id=2, name=test@t, email=test@t, role=USER)
+2025-05-18 20:28:20 - INFO - o.c.config.JwtAuthenticationFilter - Token is valid for user: test@t. Authorities: [ROLE_USER]
+2025-05-18 20:28:20 - INFO - o.c.config.JwtAuthenticationFilter - SecurityContextHolder updated for user: test@t
+2025-05-18 20:28:20 - DEBUG - o.s.security.web.FilterChainProxy - Secured POST /api/tables/1/reserve
+2025-05-18 20:28:20 - INFO - org.course.service.TableService - Резервування столика з ID: 1
+2025-05-18 20:28:20 - INFO - org.course.service.TableService - Стіл з ID 1 успішно зарезервовано користувачем test@t
+2025-05-18 20:28:20 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /api/tables/available
+2025-05-18 20:28:20 - DEBUG - o.c.config.JwtAuthenticationFilter - Processing request: GET /api/tables/available
+2025-05-18 20:28:20 - DEBUG - o.c.config.JwtAuthenticationFilter - Extracted JWT token: eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVVNFUiIsInN1YiI6InRlc3RAdCIsImlhdCI6MTc0NzU4OTI5NiwiZXhwIjoxNzQ3Njc1Njk2fQ.cJ8XBHEYp9HHtZ7zcHyrbKf8gsxwPFKgmyNY3-vKWzM
+2025-05-18 20:28:20 - DEBUG - o.c.config.JwtAuthenticationFilter - Extracted username from token: test@t
+2025-05-18 20:28:20 - DEBUG - o.c.config.JwtAuthenticationFilter - Username found and SecurityContext is null. Loading UserDetails...
+2025-05-18 20:28:20 - DEBUG - o.c.config.JwtAuthenticationFilter - Loaded UserDetails: User(id=2, name=test@t, email=test@t, role=USER)
+2025-05-18 20:28:20 - INFO - o.c.config.JwtAuthenticationFilter - Token is valid for user: test@t. Authorities: [ROLE_USER]
+2025-05-18 20:28:20 - INFO - o.c.config.JwtAuthenticationFilter - SecurityContextHolder updated for user: test@t
+2025-05-18 20:28:20 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /api/tables/available
+2025-05-18 20:28:20 - INFO - org.course.service.TableService - Отримання списку вільних столиків...
+2025-05-18 20:28:20 - INFO - org.course.service.TableService - Знайдено 0 вільних столиків
+2025-05-18 20:28:22 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /api/tables/available
+2025-05-18 20:28:22 - DEBUG - o.c.config.JwtAuthenticationFilter - Processing request: GET /api/tables/available
+2025-05-18 20:28:22 - DEBUG - o.c.config.JwtAuthenticationFilter - Extracted JWT token: eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVVNFUiIsInN1YiI6InRlc3RAdCIsImlhdCI6MTc0NzU4OTI5NiwiZXhwIjoxNzQ3Njc1Njk2fQ.cJ8XBHEYp9HHtZ7zcHyrbKf8gsxwPFKgmyNY3-vKWzM
+2025-05-18 20:28:22 - DEBUG - o.c.config.JwtAuthenticationFilter - Extracted username from token: test@t
+2025-05-18 20:28:22 - DEBUG - o.c.config.JwtAuthenticationFilter - Username found and SecurityContext is null. Loading UserDetails...
+2025-05-18 20:28:22 - DEBUG - o.c.config.JwtAuthenticationFilter - Loaded UserDetails: User(id=2, name=test@t, email=test@t, role=USER)
+2025-05-18 20:28:22 - INFO - o.c.config.JwtAuthenticationFilter - Token is valid for user: test@t. Authorities: [ROLE_USER]
+2025-05-18 20:28:22 - INFO - o.c.config.JwtAuthenticationFilter - SecurityContextHolder updated for user: test@t
+2025-05-18 20:28:22 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /api/tables/available
+2025-05-18 20:28:22 - INFO - org.course.service.TableService - Отримання списку вільних столиків...
+2025-05-18 20:28:22 - INFO - org.course.service.TableService - Знайдено 0 вільних столиків
+2025-05-18 20:28:24 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /api/dishes
+2025-05-18 20:28:24 - DEBUG - o.c.config.JwtAuthenticationFilter - Processing request: GET /api/dishes
+2025-05-18 20:28:24 - DEBUG - o.c.config.JwtAuthenticationFilter - Authorization header missing or not Bearer token. Skipping JWT filter.
+2025-05-18 20:28:24 - DEBUG - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-18 20:28:24 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /api/dishes
+2025-05-18 20:28:24 - INFO - org.course.service.DishesService - Отримання всіх страв з бази даних
+2025-05-18 20:28:24 - INFO - org.course.service.DishesService - Знайдено 0 страв
+2025-05-18 20:28:25 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /api/tables/available
+2025-05-18 20:28:25 - DEBUG - o.c.config.JwtAuthenticationFilter - Processing request: GET /api/tables/available
+2025-05-18 20:28:25 - DEBUG - o.c.config.JwtAuthenticationFilter - Extracted JWT token: eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVVNFUiIsInN1YiI6InRlc3RAdCIsImlhdCI6MTc0NzU4OTI5NiwiZXhwIjoxNzQ3Njc1Njk2fQ.cJ8XBHEYp9HHtZ7zcHyrbKf8gsxwPFKgmyNY3-vKWzM
+2025-05-18 20:28:25 - DEBUG - o.c.config.JwtAuthenticationFilter - Extracted username from token: test@t
+2025-05-18 20:28:25 - DEBUG - o.c.config.JwtAuthenticationFilter - Username found and SecurityContext is null. Loading UserDetails...
+2025-05-18 20:28:25 - DEBUG - o.c.config.JwtAuthenticationFilter - Loaded UserDetails: User(id=2, name=test@t, email=test@t, role=USER)
+2025-05-18 20:28:25 - INFO - o.c.config.JwtAuthenticationFilter - Token is valid for user: test@t. Authorities: [ROLE_USER]
+2025-05-18 20:28:25 - INFO - o.c.config.JwtAuthenticationFilter - SecurityContextHolder updated for user: test@t
+2025-05-18 20:28:25 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /api/tables/available
+2025-05-18 20:28:25 - INFO - org.course.service.TableService - Отримання списку вільних столиків...
+2025-05-18 20:28:25 - INFO - org.course.service.TableService - Знайдено 0 вільних столиків
+2025-05-18 20:28:25 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /api/dishes
+2025-05-18 20:28:25 - DEBUG - o.c.config.JwtAuthenticationFilter - Processing request: GET /api/dishes
+2025-05-18 20:28:25 - DEBUG - o.c.config.JwtAuthenticationFilter - Authorization header missing or not Bearer token. Skipping JWT filter.
+2025-05-18 20:28:25 - DEBUG - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-18 20:28:25 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /api/dishes
+2025-05-18 20:28:25 - INFO - org.course.service.DishesService - Отримання всіх страв з бази даних
+2025-05-18 20:28:25 - INFO - org.course.service.DishesService - Знайдено 0 страв
+2025-05-18 20:28:26 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /api/tables/available
+2025-05-18 20:28:26 - DEBUG - o.c.config.JwtAuthenticationFilter - Processing request: GET /api/tables/available
+2025-05-18 20:28:26 - DEBUG - o.c.config.JwtAuthenticationFilter - Extracted JWT token: eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVVNFUiIsInN1YiI6InRlc3RAdCIsImlhdCI6MTc0NzU4OTI5NiwiZXhwIjoxNzQ3Njc1Njk2fQ.cJ8XBHEYp9HHtZ7zcHyrbKf8gsxwPFKgmyNY3-vKWzM
+2025-05-18 20:28:26 - DEBUG - o.c.config.JwtAuthenticationFilter - Extracted username from token: test@t
+2025-05-18 20:28:26 - DEBUG - o.c.config.JwtAuthenticationFilter - Username found and SecurityContext is null. Loading UserDetails...
+2025-05-18 20:28:26 - DEBUG - o.c.config.JwtAuthenticationFilter - Loaded UserDetails: User(id=2, name=test@t, email=test@t, role=USER)
+2025-05-18 20:28:26 - INFO - o.c.config.JwtAuthenticationFilter - Token is valid for user: test@t. Authorities: [ROLE_USER]
+2025-05-18 20:28:26 - INFO - o.c.config.JwtAuthenticationFilter - SecurityContextHolder updated for user: test@t
+2025-05-18 20:28:26 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /api/tables/available
+2025-05-18 20:28:26 - INFO - org.course.service.TableService - Отримання списку вільних столиків...
+2025-05-18 20:28:26 - INFO - org.course.service.TableService - Знайдено 0 вільних столиків
+2025-05-18 20:28:29 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /api/tables/available
+2025-05-18 20:28:29 - DEBUG - o.c.config.JwtAuthenticationFilter - Processing request: GET /api/tables/available
+2025-05-18 20:28:29 - DEBUG - o.c.config.JwtAuthenticationFilter - Extracted JWT token: eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVVNFUiIsInN1YiI6InRlc3RAdCIsImlhdCI6MTc0NzU4OTI5NiwiZXhwIjoxNzQ3Njc1Njk2fQ.cJ8XBHEYp9HHtZ7zcHyrbKf8gsxwPFKgmyNY3-vKWzM
+2025-05-18 20:28:29 - DEBUG - o.c.config.JwtAuthenticationFilter - Extracted username from token: test@t
+2025-05-18 20:28:29 - DEBUG - o.c.config.JwtAuthenticationFilter - Username found and SecurityContext is null. Loading UserDetails...
+2025-05-18 20:28:29 - DEBUG - o.c.config.JwtAuthenticationFilter - Loaded UserDetails: User(id=2, name=test@t, email=test@t, role=USER)
+2025-05-18 20:28:29 - INFO - o.c.config.JwtAuthenticationFilter - Token is valid for user: test@t. Authorities: [ROLE_USER]
+2025-05-18 20:28:29 - INFO - o.c.config.JwtAuthenticationFilter - SecurityContextHolder updated for user: test@t
+2025-05-18 20:28:29 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /api/tables/available
+2025-05-18 20:28:29 - INFO - org.course.service.TableService - Отримання списку вільних столиків...
+2025-05-18 20:28:29 - INFO - org.course.service.TableService - Знайдено 0 вільних столиків
+2025-05-18 20:28:31 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /api/tables/available
+2025-05-18 20:28:31 - DEBUG - o.c.config.JwtAuthenticationFilter - Processing request: GET /api/tables/available
+2025-05-18 20:28:31 - DEBUG - o.c.config.JwtAuthenticationFilter - Authorization header missing or not Bearer token. Skipping JWT filter.
+2025-05-18 20:28:31 - DEBUG - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-18 20:28:31 - DEBUG - o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2025-05-18 20:28:31 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /error
+2025-05-18 20:28:31 - DEBUG - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-18 20:28:31 - DEBUG - o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2025-05-18 20:28:32 - DEBUG - o.s.security.web.FilterChainProxy - Securing POST /api/auth/login
+2025-05-18 20:28:32 - DEBUG - o.c.config.JwtAuthenticationFilter - Processing request: POST /api/auth/login
+2025-05-18 20:28:32 - DEBUG - o.c.config.JwtAuthenticationFilter - Authorization header missing or not Bearer token. Skipping JWT filter.
+2025-05-18 20:28:32 - DEBUG - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-18 20:28:32 - DEBUG - o.s.security.web.FilterChainProxy - Secured POST /api/auth/login
+2025-05-18 20:28:32 - INFO - o.course.controller.AuthController - Отримано запит на логін для email: admin@a
+2025-05-18 20:28:32 - DEBUG - o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2025-05-18 20:28:32 - DEBUG - o.course.controller.AuthController - Аутентифікація успішна для користувача: admin@a
+2025-05-18 20:28:32 - INFO - org.course.service.JwtService - Generating token for user: admin@a
+2025-05-18 20:28:32 - INFO - org.course.service.JwtService - Issued At: Sun May 18 20:28:32 EEST 2025
+2025-05-18 20:28:32 - INFO - org.course.service.JwtService - Expiration Date: Mon May 19 20:28:32 EEST 2025
+2025-05-18 20:28:32 - INFO - org.course.service.JwtService - jwtExpiration value (ms): 86400000
+2025-05-18 20:28:32 - INFO - o.course.controller.AuthController - Логін успішний. Згенеровано access token та refresh token.
+2025-05-18 20:28:32 - INFO - o.course.controller.AuthController - Завершено обробку запиту на логін для email: admin@a
+2025-05-18 20:28:33 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /api/tables
+2025-05-18 20:28:33 - DEBUG - o.c.config.JwtAuthenticationFilter - Processing request: GET /api/tables
+2025-05-18 20:28:33 - DEBUG - o.c.config.JwtAuthenticationFilter - Extracted JWT token: eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQURNSU4iLCJzdWIiOiJhZG1pbkBhIiwiaWF0IjoxNzQ3NTg5MzEyLCJleHAiOjE3NDc2NzU3MTJ9.nVZc1j2Mv4Vs-l--5mdPGs1A0NTpp3gpy6VWEe192iA
+2025-05-18 20:28:33 - DEBUG - o.c.config.JwtAuthenticationFilter - Extracted username from token: admin@a
+2025-05-18 20:28:33 - DEBUG - o.c.config.JwtAuthenticationFilter - Username found and SecurityContext is null. Loading UserDetails...
+2025-05-18 20:28:33 - DEBUG - o.c.config.JwtAuthenticationFilter - Loaded UserDetails: User(id=1, name=Admin, email=admin@a, role=ADMIN)
+2025-05-18 20:28:33 - INFO - o.c.config.JwtAuthenticationFilter - Token is valid for user: admin@a. Authorities: [ROLE_ADMIN]
+2025-05-18 20:28:33 - INFO - o.c.config.JwtAuthenticationFilter - SecurityContextHolder updated for user: admin@a
+2025-05-18 20:28:33 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /api/tables
+2025-05-18 20:28:33 - INFO - org.course.service.TableService - Отримання списку всіх столиків...
+2025-05-18 20:28:33 - INFO - org.course.service.TableService - Знайдено 1 столиків
+2025-05-18 20:28:35 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /api/tables
+2025-05-18 20:28:35 - DEBUG - o.c.config.JwtAuthenticationFilter - Processing request: GET /api/tables
+2025-05-18 20:28:35 - DEBUG - o.c.config.JwtAuthenticationFilter - Extracted JWT token: eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQURNSU4iLCJzdWIiOiJhZG1pbkBhIiwiaWF0IjoxNzQ3NTg5MzEyLCJleHAiOjE3NDc2NzU3MTJ9.nVZc1j2Mv4Vs-l--5mdPGs1A0NTpp3gpy6VWEe192iA
+2025-05-18 20:28:35 - DEBUG - o.c.config.JwtAuthenticationFilter - Extracted username from token: admin@a
+2025-05-18 20:28:35 - DEBUG - o.c.config.JwtAuthenticationFilter - Username found and SecurityContext is null. Loading UserDetails...
+2025-05-18 20:28:35 - DEBUG - o.c.config.JwtAuthenticationFilter - Loaded UserDetails: User(id=1, name=Admin, email=admin@a, role=ADMIN)
+2025-05-18 20:28:35 - INFO - o.c.config.JwtAuthenticationFilter - Token is valid for user: admin@a. Authorities: [ROLE_ADMIN]
+2025-05-18 20:28:35 - INFO - o.c.config.JwtAuthenticationFilter - SecurityContextHolder updated for user: admin@a
+2025-05-18 20:28:35 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /api/tables
+2025-05-18 20:28:36 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /api/tables
+2025-05-18 20:28:36 - DEBUG - o.c.config.JwtAuthenticationFilter - Processing request: GET /api/tables
+2025-05-18 20:28:36 - DEBUG - o.c.config.JwtAuthenticationFilter - Extracted JWT token: eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQURNSU4iLCJzdWIiOiJhZG1pbkBhIiwiaWF0IjoxNzQ3NTg5MzEyLCJleHAiOjE3NDc2NzU3MTJ9.nVZc1j2Mv4Vs-l--5mdPGs1A0NTpp3gpy6VWEe192iA
+2025-05-18 20:28:36 - DEBUG - o.c.config.JwtAuthenticationFilter - Extracted username from token: admin@a
+2025-05-18 20:28:36 - DEBUG - o.c.config.JwtAuthenticationFilter - Username found and SecurityContext is null. Loading UserDetails...
+2025-05-18 20:28:36 - DEBUG - o.c.config.JwtAuthenticationFilter - Loaded UserDetails: User(id=1, name=Admin, email=admin@a, role=ADMIN)
+2025-05-18 20:28:36 - INFO - o.c.config.JwtAuthenticationFilter - Token is valid for user: admin@a. Authorities: [ROLE_ADMIN]
+2025-05-18 20:28:36 - INFO - o.c.config.JwtAuthenticationFilter - SecurityContextHolder updated for user: admin@a
+2025-05-18 20:28:36 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /api/tables
+2025-05-18 20:28:36 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /api/tables
+2025-05-18 20:28:36 - DEBUG - o.c.config.JwtAuthenticationFilter - Processing request: GET /api/tables
+2025-05-18 20:28:36 - DEBUG - o.c.config.JwtAuthenticationFilter - Extracted JWT token: eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQURNSU4iLCJzdWIiOiJhZG1pbkBhIiwiaWF0IjoxNzQ3NTg5MzEyLCJleHAiOjE3NDc2NzU3MTJ9.nVZc1j2Mv4Vs-l--5mdPGs1A0NTpp3gpy6VWEe192iA
+2025-05-18 20:28:36 - DEBUG - o.c.config.JwtAuthenticationFilter - Extracted username from token: admin@a
+2025-05-18 20:28:36 - DEBUG - o.c.config.JwtAuthenticationFilter - Username found and SecurityContext is null. Loading UserDetails...
+2025-05-18 20:28:36 - DEBUG - o.c.config.JwtAuthenticationFilter - Loaded UserDetails: User(id=1, name=Admin, email=admin@a, role=ADMIN)
+2025-05-18 20:28:36 - INFO - o.c.config.JwtAuthenticationFilter - Token is valid for user: admin@a. Authorities: [ROLE_ADMIN]
+2025-05-18 20:28:36 - INFO - o.c.config.JwtAuthenticationFilter - SecurityContextHolder updated for user: admin@a
+2025-05-18 20:28:36 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /api/tables
+2025-05-18 20:28:39 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-18 20:28:39 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-18 20:28:52 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /api/tables
+2025-05-18 20:28:52 - DEBUG - o.c.config.JwtAuthenticationFilter - Processing request: GET /api/tables
+2025-05-18 20:28:52 - DEBUG - o.c.config.JwtAuthenticationFilter - Extracted JWT token: eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQURNSU4iLCJzdWIiOiJhZG1pbkBhIiwiaWF0IjoxNzQ3NTg5MzEyLCJleHAiOjE3NDc2NzU3MTJ9.nVZc1j2Mv4Vs-l--5mdPGs1A0NTpp3gpy6VWEe192iA
+2025-05-18 20:28:52 - DEBUG - o.c.config.JwtAuthenticationFilter - Extracted username from token: admin@a
+2025-05-18 20:28:52 - DEBUG - o.c.config.JwtAuthenticationFilter - Username found and SecurityContext is null. Loading UserDetails...
+2025-05-18 20:28:52 - DEBUG - o.c.config.JwtAuthenticationFilter - Loaded UserDetails: User(id=1, name=Admin, email=admin@a, role=ADMIN)
+2025-05-18 20:28:52 - INFO - o.c.config.JwtAuthenticationFilter - Token is valid for user: admin@a. Authorities: [ROLE_ADMIN]
+2025-05-18 20:28:52 - INFO - o.c.config.JwtAuthenticationFilter - SecurityContextHolder updated for user: admin@a
+2025-05-18 20:28:52 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /api/tables
+2025-05-18 20:28:53 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /api/tables
+2025-05-18 20:28:53 - DEBUG - o.c.config.JwtAuthenticationFilter - Processing request: GET /api/tables
+2025-05-18 20:28:53 - DEBUG - o.c.config.JwtAuthenticationFilter - Extracted JWT token: eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQURNSU4iLCJzdWIiOiJhZG1pbkBhIiwiaWF0IjoxNzQ3NTg5MzEyLCJleHAiOjE3NDc2NzU3MTJ9.nVZc1j2Mv4Vs-l--5mdPGs1A0NTpp3gpy6VWEe192iA
+2025-05-18 20:28:53 - DEBUG - o.c.config.JwtAuthenticationFilter - Extracted username from token: admin@a
+2025-05-18 20:28:53 - DEBUG - o.c.config.JwtAuthenticationFilter - Username found and SecurityContext is null. Loading UserDetails...
+2025-05-18 20:28:53 - DEBUG - o.c.config.JwtAuthenticationFilter - Loaded UserDetails: User(id=1, name=Admin, email=admin@a, role=ADMIN)
+2025-05-18 20:28:53 - INFO - o.c.config.JwtAuthenticationFilter - Token is valid for user: admin@a. Authorities: [ROLE_ADMIN]
+2025-05-18 20:28:53 - INFO - o.c.config.JwtAuthenticationFilter - SecurityContextHolder updated for user: admin@a
+2025-05-18 20:28:53 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /api/tables

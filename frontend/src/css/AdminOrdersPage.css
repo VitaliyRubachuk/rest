@@ -1,0 +1,73 @@
+.admin-orders-page {
+    padding: 20px;
+    background-color: #222;
+    color: #eee;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.admin-orders-page h2 {
+    color: #d69898;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.archive-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #f44336;
+    color: #eee;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.archive-button:hover {
+    background-color: #d32f2f;
+}
+
+.orders-list {
+    list-style: none;
+    padding: 0;
+}
+
+.order-item {
+    background-color: #333;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border: 1px solid #444;
+}
+
+.order-item p {
+    color: #ffffff;
+    margin: 5px 0;
+}
+
+.order-item strong {
+    color: #f44336;
+}
+
+.status-control {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.status-control label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.status-control select {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #555;
+    background-color: #444;
+    color: #eee;
+    flex-grow: 1;
+}

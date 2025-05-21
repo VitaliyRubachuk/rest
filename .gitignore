@@ -1,0 +1,24 @@
+# Spring Boot
+/course/target/
+/course/.idea/
+/course/*.iml
+/course/.gradle/
+/course/build/
+/course/uploads_data/ # Якщо це папка для завантажених файлів, які не повинні бути в Git
+
+# React
+/frontend/node_modules/
+/frontend/build/
+/frontend/.vite/
+/frontend/.idea/
+/frontend/dist/ # Можливо, ваша збірка створює dist, а не build
+/frontend/.env.local
+/frontend/.env.development.local
+/frontend/.env.test.local
+/frontend/.env.production.local
+
+# IDE
+.idea/
+.vscode/
+*.iml
+.DS_Store

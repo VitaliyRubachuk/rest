@@ -1,0 +1,1538 @@
+2025-05-21 11:37:40.119 - DEBUG - org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2025-05-21 11:37:40.153 - INFO - org.course.CourseApplication - Starting CourseApplication using Java 22.0.2 with PID 20240 (F:\4 курс\Диплом f\course\target\classes started by Віталій in F:\4 курс\Диплом f\course)
+2025-05-21 11:37:40.153 - DEBUG - org.course.CourseApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
+2025-05-21 11:37:40.154 - INFO - org.course.CourseApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-21 11:37:40.771 - INFO - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-21 11:37:40.844 - INFO - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 62 ms. Found 6 JPA repository interfaces.
+2025-05-21 11:37:41.302 - INFO - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-05-21 11:37:41.311 - INFO - o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-21 11:37:41.314 - INFO - o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-21 11:37:41.314 - INFO - o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-05-21 11:37:41.356 - INFO - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-21 11:37:41.356 - INFO - o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1162 ms
+2025-05-21 11:37:41.389 - DEBUG - com.zaxxer.hikari.HikariConfig - Driver class com.mysql.cj.jdbc.Driver found in Thread context class loader TomcatEmbeddedWebappClassLoader
+  context: ROOT
+  delegate: true
+----------> Parent Classloader:
+jdk.internal.loader.ClassLoaders$AppClassLoader@3fee733d
+
+2025-05-21 11:37:41.745 - INFO - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-21 11:37:41.766 - DEBUG - com.zaxxer.hikari.HikariConfig - HikariPool-1 - configuration:
+2025-05-21 11:37:41.768 - DEBUG - com.zaxxer.hikari.HikariConfig - allowPoolSuspension.............false
+2025-05-21 11:37:41.768 - DEBUG - com.zaxxer.hikari.HikariConfig - autoCommit......................true
+2025-05-21 11:37:41.768 - DEBUG - com.zaxxer.hikari.HikariConfig - catalog.........................none
+2025-05-21 11:37:41.768 - DEBUG - com.zaxxer.hikari.HikariConfig - connectionInitSql...............none
+2025-05-21 11:37:41.768 - DEBUG - com.zaxxer.hikari.HikariConfig - connectionTestQuery.............none
+2025-05-21 11:37:41.768 - DEBUG - com.zaxxer.hikari.HikariConfig - connectionTimeout...............30000
+2025-05-21 11:37:41.768 - DEBUG - com.zaxxer.hikari.HikariConfig - dataSource......................none
+2025-05-21 11:37:41.768 - DEBUG - com.zaxxer.hikari.HikariConfig - dataSourceClassName.............none
+2025-05-21 11:37:41.768 - DEBUG - com.zaxxer.hikari.HikariConfig - dataSourceJNDI..................none
+2025-05-21 11:37:41.769 - DEBUG - com.zaxxer.hikari.HikariConfig - dataSourceProperties............{password=<masked>}
+2025-05-21 11:37:41.769 - DEBUG - com.zaxxer.hikari.HikariConfig - driverClassName................."com.mysql.cj.jdbc.Driver"
+2025-05-21 11:37:41.769 - DEBUG - com.zaxxer.hikari.HikariConfig - exceptionOverrideClassName......none
+2025-05-21 11:37:41.769 - DEBUG - com.zaxxer.hikari.HikariConfig - healthCheckProperties...........{}
+2025-05-21 11:37:41.769 - DEBUG - com.zaxxer.hikari.HikariConfig - healthCheckRegistry.............none
+2025-05-21 11:37:41.769 - DEBUG - com.zaxxer.hikari.HikariConfig - idleTimeout.....................600000
+2025-05-21 11:37:41.769 - DEBUG - com.zaxxer.hikari.HikariConfig - initializationFailTimeout.......1
+2025-05-21 11:37:41.769 - DEBUG - com.zaxxer.hikari.HikariConfig - isolateInternalQueries..........false
+2025-05-21 11:37:41.769 - DEBUG - com.zaxxer.hikari.HikariConfig - jdbcUrl.........................jdbc:mysql://localhost:3306/rest
+2025-05-21 11:37:41.769 - DEBUG - com.zaxxer.hikari.HikariConfig - keepaliveTime...................0
+2025-05-21 11:37:41.769 - DEBUG - com.zaxxer.hikari.HikariConfig - leakDetectionThreshold..........0
+2025-05-21 11:37:41.769 - DEBUG - com.zaxxer.hikari.HikariConfig - maxLifetime.....................1800000
+2025-05-21 11:37:41.769 - DEBUG - com.zaxxer.hikari.HikariConfig - maximumPoolSize.................10
+2025-05-21 11:37:41.769 - DEBUG - com.zaxxer.hikari.HikariConfig - metricRegistry..................none
+2025-05-21 11:37:41.769 - DEBUG - com.zaxxer.hikari.HikariConfig - metricsTrackerFactory...........none
+2025-05-21 11:37:41.769 - DEBUG - com.zaxxer.hikari.HikariConfig - minimumIdle.....................10
+2025-05-21 11:37:41.769 - DEBUG - com.zaxxer.hikari.HikariConfig - password........................<masked>
+2025-05-21 11:37:41.769 - DEBUG - com.zaxxer.hikari.HikariConfig - poolName........................"HikariPool-1"
+2025-05-21 11:37:41.770 - DEBUG - com.zaxxer.hikari.HikariConfig - readOnly........................false
+2025-05-21 11:37:41.770 - DEBUG - com.zaxxer.hikari.HikariConfig - registerMbeans..................false
+2025-05-21 11:37:41.770 - DEBUG - com.zaxxer.hikari.HikariConfig - scheduledExecutor...............none
+2025-05-21 11:37:41.770 - DEBUG - com.zaxxer.hikari.HikariConfig - schema..........................none
+2025-05-21 11:37:41.770 - DEBUG - com.zaxxer.hikari.HikariConfig - threadFactory...................internal
+2025-05-21 11:37:41.770 - DEBUG - com.zaxxer.hikari.HikariConfig - transactionIsolation............default
+2025-05-21 11:37:41.770 - DEBUG - com.zaxxer.hikari.HikariConfig - username........................"root"
+2025-05-21 11:37:41.770 - DEBUG - com.zaxxer.hikari.HikariConfig - validationTimeout...............5000
+2025-05-21 11:37:41.770 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-21 11:37:41.860 - DEBUG - com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to create/setup connection: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2025-05-21 11:37:41.860 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Cannot acquire connection from data source
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:175)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:446)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:439)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:292)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:124)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:78)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:221)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:189)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:682)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1355)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1705)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1454)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:211)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:174)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:169)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:154)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:87)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:266)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:240)
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:52)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4412)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:772)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:203)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:415)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:870)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:437)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:128)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:107)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:516)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:222)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:188)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:619)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at org.course.CourseApplication.main(CourseApplication.java:15)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:62)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:150)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:166)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:121)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:945)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:815)
+	... 134 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:752)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:153)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
+	... 137 common frames omitted
+2025-05-21 11:37:42.865 - WARN - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 08S01
+2025-05-21 11:37:42.865 - ERROR - o.h.e.jdbc.spi.SqlExceptionHelper - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2025-05-21 11:37:42.882 - WARN - o.h.e.j.e.i.JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query metadata
+org.hibernate.exception.JDBCConnectionException: unable to obtain isolated JDBC connection [Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.] [n/a]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:100)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:292)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:124)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:78)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:221)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:189)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:682)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1355)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1705)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1454)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:211)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:174)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:169)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:154)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:87)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:266)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:240)
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:52)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4412)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:772)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:203)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:415)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:870)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:437)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:128)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:107)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:516)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:222)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:188)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:619)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at org.course.CourseApplication.main(CourseApplication.java:15)
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:175)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:446)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:439)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61)
+	... 121 common frames omitted
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:62)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:150)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:166)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:121)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:945)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:815)
+	... 134 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:752)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:153)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
+	... 137 common frames omitted
+2025-05-21 11:37:42.896 - WARN - org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-21 11:37:42.897 - WARN - org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-05-21 11:37:43.699 - DEBUG - com.zaxxer.hikari.HikariConfig - HikariPool-1 - configuration:
+2025-05-21 11:37:43.699 - DEBUG - com.zaxxer.hikari.HikariConfig - allowPoolSuspension.............false
+2025-05-21 11:37:43.699 - DEBUG - com.zaxxer.hikari.HikariConfig - autoCommit......................true
+2025-05-21 11:37:43.699 - DEBUG - com.zaxxer.hikari.HikariConfig - catalog.........................none
+2025-05-21 11:37:43.699 - DEBUG - com.zaxxer.hikari.HikariConfig - connectionInitSql...............none
+2025-05-21 11:37:43.699 - DEBUG - com.zaxxer.hikari.HikariConfig - connectionTestQuery.............none
+2025-05-21 11:37:43.699 - DEBUG - com.zaxxer.hikari.HikariConfig - connectionTimeout...............30000
+2025-05-21 11:37:43.699 - DEBUG - com.zaxxer.hikari.HikariConfig - dataSource......................none
+2025-05-21 11:37:43.699 - DEBUG - com.zaxxer.hikari.HikariConfig - dataSourceClassName.............none
+2025-05-21 11:37:43.699 - DEBUG - com.zaxxer.hikari.HikariConfig - dataSourceJNDI..................none
+2025-05-21 11:37:43.699 - DEBUG - com.zaxxer.hikari.HikariConfig - dataSourceProperties............{password=<masked>}
+2025-05-21 11:37:43.699 - DEBUG - com.zaxxer.hikari.HikariConfig - driverClassName................."com.mysql.cj.jdbc.Driver"
+2025-05-21 11:37:43.699 - DEBUG - com.zaxxer.hikari.HikariConfig - exceptionOverrideClassName......none
+2025-05-21 11:37:43.699 - DEBUG - com.zaxxer.hikari.HikariConfig - healthCheckProperties...........{}
+2025-05-21 11:37:43.699 - DEBUG - com.zaxxer.hikari.HikariConfig - healthCheckRegistry.............none
+2025-05-21 11:37:43.699 - DEBUG - com.zaxxer.hikari.HikariConfig - idleTimeout.....................600000
+2025-05-21 11:37:43.699 - DEBUG - com.zaxxer.hikari.HikariConfig - initializationFailTimeout.......1
+2025-05-21 11:37:43.699 - DEBUG - com.zaxxer.hikari.HikariConfig - isolateInternalQueries..........false
+2025-05-21 11:37:43.699 - DEBUG - com.zaxxer.hikari.HikariConfig - jdbcUrl.........................jdbc:mysql://localhost:3306/rest
+2025-05-21 11:37:43.699 - DEBUG - com.zaxxer.hikari.HikariConfig - keepaliveTime...................0
+2025-05-21 11:37:43.699 - DEBUG - com.zaxxer.hikari.HikariConfig - leakDetectionThreshold..........0
+2025-05-21 11:37:43.699 - DEBUG - com.zaxxer.hikari.HikariConfig - maxLifetime.....................1800000
+2025-05-21 11:37:43.699 - DEBUG - com.zaxxer.hikari.HikariConfig - maximumPoolSize.................10
+2025-05-21 11:37:43.699 - DEBUG - com.zaxxer.hikari.HikariConfig - metricRegistry..................none
+2025-05-21 11:37:43.699 - DEBUG - com.zaxxer.hikari.HikariConfig - metricsTrackerFactory...........none
+2025-05-21 11:37:43.699 - DEBUG - com.zaxxer.hikari.HikariConfig - minimumIdle.....................10
+2025-05-21 11:37:43.699 - DEBUG - com.zaxxer.hikari.HikariConfig - password........................<masked>
+2025-05-21 11:37:43.699 - DEBUG - com.zaxxer.hikari.HikariConfig - poolName........................"HikariPool-1"
+2025-05-21 11:37:43.700 - DEBUG - com.zaxxer.hikari.HikariConfig - readOnly........................false
+2025-05-21 11:37:43.700 - DEBUG - com.zaxxer.hikari.HikariConfig - registerMbeans..................false
+2025-05-21 11:37:43.700 - DEBUG - com.zaxxer.hikari.HikariConfig - scheduledExecutor...............none
+2025-05-21 11:37:43.700 - DEBUG - com.zaxxer.hikari.HikariConfig - schema..........................none
+2025-05-21 11:37:43.700 - DEBUG - com.zaxxer.hikari.HikariConfig - threadFactory...................internal
+2025-05-21 11:37:43.700 - DEBUG - com.zaxxer.hikari.HikariConfig - transactionIsolation............default
+2025-05-21 11:37:43.700 - DEBUG - com.zaxxer.hikari.HikariConfig - username........................"root"
+2025-05-21 11:37:43.700 - DEBUG - com.zaxxer.hikari.HikariConfig - validationTimeout...............5000
+2025-05-21 11:37:43.700 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-21 11:37:43.701 - DEBUG - com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to create/setup connection: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2025-05-21 11:37:43.701 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Cannot acquire connection from data source
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:175)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:446)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:439)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:39)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcDatabaseMetaData(ImprovedExtractionContextImpl.java:70)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.processTableResultSet(InformationExtractorJdbcDatabaseMetaDataImpl.java:65)
+	at org.hibernate.tool.schema.extract.internal.AbstractInformationExtractorImpl.getTables(AbstractInformationExtractorImpl.java:570)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:122)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:72)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:240)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:119)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:280)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1429)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:322)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:457)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1506)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:682)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1355)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1705)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1454)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:211)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:174)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:169)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:154)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:87)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:266)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:240)
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:52)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4412)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:772)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:203)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:415)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:870)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:437)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:128)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:107)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:516)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:222)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:188)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:619)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at org.course.CourseApplication.main(CourseApplication.java:15)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:62)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:150)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:166)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:121)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:945)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:815)
+	... 139 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:752)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:153)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
+	... 142 common frames omitted
+2025-05-21 11:37:44.703 - WARN - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 08S01
+2025-05-21 11:37:44.703 - ERROR - o.h.e.jdbc.spi.SqlExceptionHelper - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2025-05-21 11:37:44.705 - ERROR - o.s.o.j.LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.] [n/a]
+2025-05-21 11:37:44.706 - ERROR - o.s.b.w.e.tomcat.TomcatStarter - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtAuthenticationFilter' defined in file [F:\4 курс\Диплом f\course\target\classes\org\course\config\JwtAuthenticationFilter.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'userService' defined in file [F:\4 курс\Диплом f\course\target\classes\org\course\service\UserService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userRepository' defined in org.course.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaSharedEM_entityManagerFactory' while setting bean property 'entityManager'
+2025-05-21 11:37:44.743 - INFO - o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-05-21 11:37:44.747 - WARN - o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2025-05-21 11:37:44.752 - INFO - o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-05-21 11:37:44.766 - ERROR - o.s.boot.SpringApplication - Application run failed
+org.springframework.context.ApplicationContextException: Unable to start web server
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:165)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:619)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at org.course.CourseApplication.main(CourseApplication.java:15)
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:147)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:107)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:516)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:222)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:188)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162)
+	... 8 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtAuthenticationFilter' defined in file [F:\4 курс\Диплом f\course\target\classes\org\course\config\JwtAuthenticationFilter.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'userService' defined in file [F:\4 курс\Диплом f\course\target\classes\org\course\service\UserService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userRepository' defined in org.course.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaSharedEM_entityManagerFactory' while setting bean property 'entityManager'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:211)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:174)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:169)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:154)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:87)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:266)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:240)
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:52)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4412)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:772)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:203)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:415)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:870)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:437)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:128)
+	... 13 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService' defined in file [F:\4 курс\Диплом f\course\target\classes\org\course\service\UserService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userRepository' defined in org.course.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaSharedEM_entityManagerFactory' while setting bean property 'entityManager'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	... 54 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in org.course.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaSharedEM_entityManagerFactory' while setting bean property 'entityManager'
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:377)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1705)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1454)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	... 68 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaSharedEM_entityManagerFactory': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:377)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:682)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1355)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365)
+	... 82 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.] [n/a]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365)
+	... 94 common frames omitted
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.] [n/a]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	... 101 common frames omitted
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.] [n/a]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:100)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:74)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:39)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcDatabaseMetaData(ImprovedExtractionContextImpl.java:70)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.processTableResultSet(InformationExtractorJdbcDatabaseMetaDataImpl.java:65)
+	at org.hibernate.tool.schema.extract.internal.AbstractInformationExtractorImpl.getTables(AbstractInformationExtractorImpl.java:570)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:122)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:72)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:240)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:119)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:280)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1429)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:322)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:457)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1506)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	... 105 common frames omitted
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:175)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:446)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:439)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46)
+	... 126 common frames omitted
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:62)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:150)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:166)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:121)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:945)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:815)
+	... 139 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:752)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:153)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
+	... 142 common frames omitted
+2025-05-21 11:38:43.111 - DEBUG - org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2025-05-21 11:38:43.152 - INFO - org.course.CourseApplication - Starting CourseApplication using Java 22.0.2 with PID 4172 (F:\4 курс\Диплом f\course\target\classes started by Віталій in F:\4 курс\Диплом f\course)
+2025-05-21 11:38:43.152 - DEBUG - org.course.CourseApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
+2025-05-21 11:38:43.153 - INFO - org.course.CourseApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-21 11:38:43.906 - INFO - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-21 11:38:43.985 - INFO - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 70 ms. Found 6 JPA repository interfaces.
+2025-05-21 11:38:44.986 - INFO - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-05-21 11:38:45.010 - INFO - o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-21 11:38:45.015 - INFO - o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-21 11:38:45.016 - INFO - o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-05-21 11:38:45.097 - INFO - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-21 11:38:45.098 - INFO - o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1896 ms
+2025-05-21 11:38:45.158 - DEBUG - com.zaxxer.hikari.HikariConfig - Driver class com.mysql.cj.jdbc.Driver found in Thread context class loader TomcatEmbeddedWebappClassLoader
+  context: ROOT
+  delegate: true
+----------> Parent Classloader:
+jdk.internal.loader.ClassLoaders$AppClassLoader@3fee733d
+
+2025-05-21 11:38:45.792 - INFO - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-21 11:38:45.829 - DEBUG - com.zaxxer.hikari.HikariConfig - HikariPool-1 - configuration:
+2025-05-21 11:38:45.832 - DEBUG - com.zaxxer.hikari.HikariConfig - allowPoolSuspension.............false
+2025-05-21 11:38:45.832 - DEBUG - com.zaxxer.hikari.HikariConfig - autoCommit......................true
+2025-05-21 11:38:45.832 - DEBUG - com.zaxxer.hikari.HikariConfig - catalog.........................none
+2025-05-21 11:38:45.832 - DEBUG - com.zaxxer.hikari.HikariConfig - connectionInitSql...............none
+2025-05-21 11:38:45.833 - DEBUG - com.zaxxer.hikari.HikariConfig - connectionTestQuery.............none
+2025-05-21 11:38:45.833 - DEBUG - com.zaxxer.hikari.HikariConfig - connectionTimeout...............30000
+2025-05-21 11:38:45.833 - DEBUG - com.zaxxer.hikari.HikariConfig - dataSource......................none
+2025-05-21 11:38:45.833 - DEBUG - com.zaxxer.hikari.HikariConfig - dataSourceClassName.............none
+2025-05-21 11:38:45.834 - DEBUG - com.zaxxer.hikari.HikariConfig - dataSourceJNDI..................none
+2025-05-21 11:38:45.834 - DEBUG - com.zaxxer.hikari.HikariConfig - dataSourceProperties............{password=<masked>}
+2025-05-21 11:38:45.834 - DEBUG - com.zaxxer.hikari.HikariConfig - driverClassName................."com.mysql.cj.jdbc.Driver"
+2025-05-21 11:38:45.834 - DEBUG - com.zaxxer.hikari.HikariConfig - exceptionOverrideClassName......none
+2025-05-21 11:38:45.834 - DEBUG - com.zaxxer.hikari.HikariConfig - healthCheckProperties...........{}
+2025-05-21 11:38:45.834 - DEBUG - com.zaxxer.hikari.HikariConfig - healthCheckRegistry.............none
+2025-05-21 11:38:45.834 - DEBUG - com.zaxxer.hikari.HikariConfig - idleTimeout.....................600000
+2025-05-21 11:38:45.835 - DEBUG - com.zaxxer.hikari.HikariConfig - initializationFailTimeout.......1
+2025-05-21 11:38:45.835 - DEBUG - com.zaxxer.hikari.HikariConfig - isolateInternalQueries..........false
+2025-05-21 11:38:45.835 - DEBUG - com.zaxxer.hikari.HikariConfig - jdbcUrl.........................jdbc:mysql://localhost:3306/rest
+2025-05-21 11:38:45.835 - DEBUG - com.zaxxer.hikari.HikariConfig - keepaliveTime...................0
+2025-05-21 11:38:45.835 - DEBUG - com.zaxxer.hikari.HikariConfig - leakDetectionThreshold..........0
+2025-05-21 11:38:45.835 - DEBUG - com.zaxxer.hikari.HikariConfig - maxLifetime.....................1800000
+2025-05-21 11:38:45.835 - DEBUG - com.zaxxer.hikari.HikariConfig - maximumPoolSize.................10
+2025-05-21 11:38:45.835 - DEBUG - com.zaxxer.hikari.HikariConfig - metricRegistry..................none
+2025-05-21 11:38:45.835 - DEBUG - com.zaxxer.hikari.HikariConfig - metricsTrackerFactory...........none
+2025-05-21 11:38:45.835 - DEBUG - com.zaxxer.hikari.HikariConfig - minimumIdle.....................10
+2025-05-21 11:38:45.835 - DEBUG - com.zaxxer.hikari.HikariConfig - password........................<masked>
+2025-05-21 11:38:45.836 - DEBUG - com.zaxxer.hikari.HikariConfig - poolName........................"HikariPool-1"
+2025-05-21 11:38:45.836 - DEBUG - com.zaxxer.hikari.HikariConfig - readOnly........................false
+2025-05-21 11:38:45.836 - DEBUG - com.zaxxer.hikari.HikariConfig - registerMbeans..................false
+2025-05-21 11:38:45.836 - DEBUG - com.zaxxer.hikari.HikariConfig - scheduledExecutor...............none
+2025-05-21 11:38:45.836 - DEBUG - com.zaxxer.hikari.HikariConfig - schema..........................none
+2025-05-21 11:38:45.836 - DEBUG - com.zaxxer.hikari.HikariConfig - threadFactory...................internal
+2025-05-21 11:38:45.836 - DEBUG - com.zaxxer.hikari.HikariConfig - transactionIsolation............default
+2025-05-21 11:38:45.836 - DEBUG - com.zaxxer.hikari.HikariConfig - username........................"root"
+2025-05-21 11:38:45.836 - DEBUG - com.zaxxer.hikari.HikariConfig - validationTimeout...............5000
+2025-05-21 11:38:45.836 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-21 11:38:46.300 - INFO - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4df7b4ac
+2025-05-21 11:38:46.302 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-21 11:38:46.351 - WARN - org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-21 11:38:46.352 - WARN - org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-05-21 11:38:46.409 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2025-05-21 11:38:46.428 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@22b4cf02
+2025-05-21 11:38:46.473 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After adding stats (total=2, active=0, idle=2, waiting=0)
+2025-05-21 11:38:46.499 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@56e85970
+2025-05-21 11:38:46.537 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After adding stats (total=3, active=0, idle=3, waiting=0)
+2025-05-21 11:38:46.552 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2e2b8287
+2025-05-21 11:38:46.585 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After adding stats (total=4, active=0, idle=4, waiting=0)
+2025-05-21 11:38:46.601 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1791d0ab
+2025-05-21 11:38:46.633 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After adding stats (total=5, active=0, idle=5, waiting=0)
+2025-05-21 11:38:46.650 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1ee559af
+2025-05-21 11:38:46.682 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After adding stats (total=6, active=0, idle=6, waiting=0)
+2025-05-21 11:38:46.699 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@d875bc
+2025-05-21 11:38:46.730 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After adding stats (total=7, active=0, idle=7, waiting=0)
+2025-05-21 11:38:46.743 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7546fa3e
+2025-05-21 11:38:46.778 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After adding stats (total=8, active=0, idle=8, waiting=0)
+2025-05-21 11:38:46.792 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@28476664
+2025-05-21 11:38:46.826 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After adding stats (total=9, active=0, idle=9, waiting=0)
+2025-05-21 11:38:46.838 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7c02cc3a
+2025-05-21 11:38:46.874 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 11:38:47.715 - INFO - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-21 11:38:48.057 - INFO - org.course.service.UserService - Перевірка наявності адміністратора за замовчуванням
+2025-05-21 11:38:48.241 - INFO - org.course.service.UserService - Адміністратор за замовчуванням вже існує
+2025-05-21 11:38:48.299 - DEBUG - o.c.config.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-05-21 11:38:48.348 - WARN - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-21 11:38:48.404 - INFO - o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-05-21 11:38:48.405 - WARN - o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2025-05-21 11:38:48.539 - INFO - o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-21 11:38:49.122 - DEBUG - _.s.w.s.HandlerMapping.Mappings - 
+	o.c.c.AuthController:
+	{POST [/api/auth/refresh-token]}: refreshToken(RefreshTokenRequest)
+	{POST [/api/auth/login]}: authenticateAndGetToken(AuthRequest)
+2025-05-21 11:38:49.130 - DEBUG - _.s.w.s.HandlerMapping.Mappings - 
+	o.c.c.DishesController:
+	{GET [/api/dishes/category/{category}]}: getDishesByCategory(String)
+	{GET [/api/dishes/{id}]}: getDishesById(long)
+	{GET [/api/dishes/sort/price/{order}]}: sortDishesByPrice(boolean)
+	{POST [/api/dishes], consumes [multipart/form-data]}: createDishes(DishesCreateDTO,BindingResult,MultipartFile)
+	{PUT [/api/dishes/{id}], consumes [multipart/form-data]}: updateDishes(long,DishesDto,BindingResult,MultipartFile)
+	{GET [/api/dishes/sort/name/{order}]}: sortDishesByName(boolean)
+	{GET [/api/dishes]}: getAllDishes()
+	{DELETE [/api/dishes/{id}]}: deleteDishes(long)
+	{GET [/api/dishes/{size}/page/{page}]}: getDishesWithPagination(int,int)
+2025-05-21 11:38:49.136 - DEBUG - _.s.w.s.HandlerMapping.Mappings - 
+	o.c.c.OrderController:
+	{GET [/api/orders/{size}/page/{page}]}: getAllOrdersWithPath(int,int,OrderStatus)
+	{GET [/api/orders/my/{size}/page/{page}]}: getMyOrdersWithPath(int,int)
+	{POST [/api/orders]}: createOrder(OrderCreateDTO,BindingResult)
+	{GET [/api/orders/{id}]}: getOrderById(long)
+	{PUT [/api/orders/{id}/status]}: updateOrderStatus(long,Map)
+	{PUT [/api/orders/my/{id}]}: updateMyOrder(long,OrderCreateDTO,BindingResult)
+	{PUT [/api/orders/{orderId}/viewed]}: markOrderAsViewed(long)
+	{GET [/api/orders]}: getAllOrders(OrderStatus,int,int)
+	{DELETE [/api/orders/{id}]}: deleteOrder(long)
+	{GET [/api/orders/my]}: getMyOrders(int,int)
+	{GET [/api/orders/my/archive]}: getMyArchiveOrders(int,int)
+	{PUT [/api/orders/{id}]}: updateOrder(long,OrderCreateDTO,BindingResult)
+2025-05-21 11:38:49.141 - DEBUG - _.s.w.s.HandlerMapping.Mappings - 
+	o.c.c.ReviewController:
+	{PUT [/api/reviews/{id}]}: updateReview(Long,ReviewUpdateDTO,BindingResult,Principal)
+	{DELETE [/api/reviews/{id}]}: deleteReview(Long)
+	{GET [/api/reviews]}: getAllReviews()
+	{GET [/api/reviews/sort]}: sortReviews(String,String)
+	{GET [/api/reviews/user/{userId}]}: getReviewsByUserId(Long)
+	{GET [/api/reviews/dish/{dishId}]}: getReviewsByDishId(Long)
+	{POST [/api/reviews]}: addReview(ReviewCreateDTO,BindingResult)
+2025-05-21 11:38:49.145 - DEBUG - _.s.w.s.HandlerMapping.Mappings - 
+	o.c.c.TableController:
+	{PUT [/api/tables/{id}]}: updateTable(long,TableDto,BindingResult)
+	{POST [/api/tables/{id}/reserve]}: reserveTable(long)
+	{GET [/api/tables]}: getAllTables()
+	{POST [/api/tables]}: createTable(TableCreateDto,BindingResult)
+	{DELETE [/api/tables/{id}/reserve]}: cancelReservation(long)
+	{GET [/api/tables/{id}]}: getTableById(long)
+	{DELETE [/api/tables/{id}]}: deleteTable(long)
+	{GET [/api/tables/available]}: getAvailableTables()
+2025-05-21 11:38:49.148 - DEBUG - _.s.w.s.HandlerMapping.Mappings - 
+	o.c.c.UserController:
+	{GET [/api/users/sorted/name]}: getUsersSortedByName()
+	{GET [/api/users/my-tables]}: getMyTables()
+	{GET [/api/users]}: getAllUsers()
+	{GET [/api/users/{id}]}: getUserById(long)
+	{DELETE [/api/users/{id}]}: deleteUser(long)
+	{POST [/api/users]}: createUser(UserCreateDTO,BindingResult)
+	{PUT [/api/users/{id}]}: updateUser(long,UserDto)
+2025-05-21 11:38:49.152 - DEBUG - _.s.w.s.HandlerMapping.Mappings - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2025-05-21 11:38:49.155 - DEBUG - o.s.w.s.m.m.a.RequestMappingHandlerMapping - 47 mappings in 'requestMappingHandlerMapping'
+2025-05-21 11:38:49.163 - DEBUG - _.s.w.s.HandlerMapping.Mappings - 'beanNameHandlerMapping' {}
+2025-05-21 11:38:49.249 - DEBUG - _.s.w.s.HandlerMapping.Mappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]], /uploads/**=ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], URL [file:uploads_data/], ServletContext [/]]}
+2025-05-21 11:38:49.304 - DEBUG - o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-05-21 11:38:49.413 - DEBUG - o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-05-21 11:38:49.455 - DEBUG - o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-05-21 11:38:49.592 - INFO - o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-21 11:38:49.611 - INFO - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-05-21 11:38:49.620 - INFO - org.course.CourseApplication - Started CourseApplication in 7.002 seconds (process running for 7.739)
+2025-05-21 11:39:16.415 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 11:39:16.416 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 11:39:46.462 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 11:39:46.462 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 11:40:16.464 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 11:40:16.464 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 11:40:36.515 - INFO - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-21 11:40:36.515 - INFO - o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-05-21 11:40:36.515 - DEBUG - o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-05-21 11:40:36.515 - DEBUG - o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-05-21 11:40:36.515 - DEBUG - o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-05-21 11:40:36.516 - DEBUG - o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3ef85262
+2025-05-21 11:40:36.516 - DEBUG - o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@2dca3c72
+2025-05-21 11:40:36.517 - DEBUG - o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-05-21 11:40:36.517 - INFO - o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-05-21 11:40:36.534 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /api/dishes
+2025-05-21 11:40:36.560 - DEBUG - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-21 11:40:36.561 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /api/dishes
+2025-05-21 11:40:36.564 - DEBUG - o.s.web.servlet.DispatcherServlet - GET "/api/dishes", parameters={}
+2025-05-21 11:40:36.565 - DEBUG - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.course.controller.DishesController#getAllDishes()
+2025-05-21 11:40:36.605 - INFO - org.course.service.DishesService - Отримання всіх страв з бази даних
+2025-05-21 11:40:36.626 - INFO - org.course.service.DishesService - Знайдено 1 страв
+2025-05-21 11:40:36.673 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-21 11:40:36.681 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{dishes=[DishesDto[id=1, name=Стас, category=Пяний дебош, price=220.0, description=Чоловік в нетвере (truncated)...]
+2025-05-21 11:40:36.729 - DEBUG - o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-21 11:40:36.740 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /uploads/images/dishes/117ebdc7-1daa-4371-aa6e-21613715d855.jpg
+2025-05-21 11:40:36.740 - DEBUG - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-21 11:40:36.740 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /uploads/images/dishes/117ebdc7-1daa-4371-aa6e-21613715d855.jpg
+2025-05-21 11:40:36.740 - DEBUG - o.s.web.servlet.DispatcherServlet - GET "/uploads/images/dishes/117ebdc7-1daa-4371-aa6e-21613715d855.jpg", parameters={}
+2025-05-21 11:40:36.741 - DEBUG - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], URL [file:uploads_data/], ServletContext [/]]
+2025-05-21 11:40:36.769 - DEBUG - o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-21 11:40:46.466 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 11:40:46.466 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 11:41:11.332 - INFO - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-21 11:41:11.336 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-21 11:41:11.336 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 11:41:11.337 - DEBUG - com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@4df7b4ac: (connection evicted)
+2025-05-21 11:41:11.341 - DEBUG - com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@22b4cf02: (connection evicted)
+2025-05-21 11:41:11.341 - DEBUG - com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@56e85970: (connection evicted)
+2025-05-21 11:41:11.341 - DEBUG - com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@2e2b8287: (connection evicted)
+2025-05-21 11:41:11.342 - DEBUG - com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@1791d0ab: (connection evicted)
+2025-05-21 11:41:11.342 - DEBUG - com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@1ee559af: (connection evicted)
+2025-05-21 11:41:11.342 - DEBUG - com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@d875bc: (connection evicted)
+2025-05-21 11:41:11.343 - DEBUG - com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@7546fa3e: (connection evicted)
+2025-05-21 11:41:11.343 - DEBUG - com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@28476664: (connection evicted)
+2025-05-21 11:41:11.343 - DEBUG - com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@7c02cc3a: (connection evicted)
+2025-05-21 11:41:11.343 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+2025-05-21 11:41:11.344 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-21 11:41:14.171 - DEBUG - org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2025-05-21 11:41:14.223 - INFO - org.course.CourseApplication - Starting CourseApplication using Java 22.0.2 with PID 13004 (F:\4 курс\Диплом f\course\target\classes started by Віталій in F:\4 курс\Диплом f\course)
+2025-05-21 11:41:14.224 - DEBUG - org.course.CourseApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
+2025-05-21 11:41:14.224 - INFO - org.course.CourseApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-21 11:41:15.001 - INFO - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-21 11:41:15.070 - INFO - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 63 ms. Found 6 JPA repository interfaces.
+2025-05-21 11:41:15.605 - INFO - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-05-21 11:41:15.615 - INFO - o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-21 11:41:15.618 - INFO - o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-21 11:41:15.618 - INFO - o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-05-21 11:41:15.692 - INFO - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-21 11:41:15.692 - INFO - o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1411 ms
+2025-05-21 11:41:15.738 - DEBUG - com.zaxxer.hikari.HikariConfig - Driver class com.mysql.cj.jdbc.Driver found in Thread context class loader TomcatEmbeddedWebappClassLoader
+  context: ROOT
+  delegate: true
+----------> Parent Classloader:
+jdk.internal.loader.ClassLoaders$AppClassLoader@3fee733d
+
+2025-05-21 11:41:16.178 - INFO - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-21 11:41:16.208 - DEBUG - com.zaxxer.hikari.HikariConfig - HikariPool-1 - configuration:
+2025-05-21 11:41:16.211 - DEBUG - com.zaxxer.hikari.HikariConfig - allowPoolSuspension.............false
+2025-05-21 11:41:16.211 - DEBUG - com.zaxxer.hikari.HikariConfig - autoCommit......................true
+2025-05-21 11:41:16.211 - DEBUG - com.zaxxer.hikari.HikariConfig - catalog.........................none
+2025-05-21 11:41:16.211 - DEBUG - com.zaxxer.hikari.HikariConfig - connectionInitSql...............none
+2025-05-21 11:41:16.212 - DEBUG - com.zaxxer.hikari.HikariConfig - connectionTestQuery.............none
+2025-05-21 11:41:16.212 - DEBUG - com.zaxxer.hikari.HikariConfig - connectionTimeout...............30000
+2025-05-21 11:41:16.212 - DEBUG - com.zaxxer.hikari.HikariConfig - dataSource......................none
+2025-05-21 11:41:16.212 - DEBUG - com.zaxxer.hikari.HikariConfig - dataSourceClassName.............none
+2025-05-21 11:41:16.212 - DEBUG - com.zaxxer.hikari.HikariConfig - dataSourceJNDI..................none
+2025-05-21 11:41:16.212 - DEBUG - com.zaxxer.hikari.HikariConfig - dataSourceProperties............{password=<masked>}
+2025-05-21 11:41:16.213 - DEBUG - com.zaxxer.hikari.HikariConfig - driverClassName................."com.mysql.cj.jdbc.Driver"
+2025-05-21 11:41:16.213 - DEBUG - com.zaxxer.hikari.HikariConfig - exceptionOverrideClassName......none
+2025-05-21 11:41:16.213 - DEBUG - com.zaxxer.hikari.HikariConfig - healthCheckProperties...........{}
+2025-05-21 11:41:16.213 - DEBUG - com.zaxxer.hikari.HikariConfig - healthCheckRegistry.............none
+2025-05-21 11:41:16.213 - DEBUG - com.zaxxer.hikari.HikariConfig - idleTimeout.....................600000
+2025-05-21 11:41:16.213 - DEBUG - com.zaxxer.hikari.HikariConfig - initializationFailTimeout.......1
+2025-05-21 11:41:16.213 - DEBUG - com.zaxxer.hikari.HikariConfig - isolateInternalQueries..........false
+2025-05-21 11:41:16.213 - DEBUG - com.zaxxer.hikari.HikariConfig - jdbcUrl.........................jdbc:mysql://localhost:3306/rest
+2025-05-21 11:41:16.213 - DEBUG - com.zaxxer.hikari.HikariConfig - keepaliveTime...................0
+2025-05-21 11:41:16.214 - DEBUG - com.zaxxer.hikari.HikariConfig - leakDetectionThreshold..........0
+2025-05-21 11:41:16.214 - DEBUG - com.zaxxer.hikari.HikariConfig - maxLifetime.....................1800000
+2025-05-21 11:41:16.214 - DEBUG - com.zaxxer.hikari.HikariConfig - maximumPoolSize.................10
+2025-05-21 11:41:16.214 - DEBUG - com.zaxxer.hikari.HikariConfig - metricRegistry..................none
+2025-05-21 11:41:16.214 - DEBUG - com.zaxxer.hikari.HikariConfig - metricsTrackerFactory...........none
+2025-05-21 11:41:16.214 - DEBUG - com.zaxxer.hikari.HikariConfig - minimumIdle.....................10
+2025-05-21 11:41:16.214 - DEBUG - com.zaxxer.hikari.HikariConfig - password........................<masked>
+2025-05-21 11:41:16.214 - DEBUG - com.zaxxer.hikari.HikariConfig - poolName........................"HikariPool-1"
+2025-05-21 11:41:16.214 - DEBUG - com.zaxxer.hikari.HikariConfig - readOnly........................false
+2025-05-21 11:41:16.215 - DEBUG - com.zaxxer.hikari.HikariConfig - registerMbeans..................false
+2025-05-21 11:41:16.215 - DEBUG - com.zaxxer.hikari.HikariConfig - scheduledExecutor...............none
+2025-05-21 11:41:16.215 - DEBUG - com.zaxxer.hikari.HikariConfig - schema..........................none
+2025-05-21 11:41:16.216 - DEBUG - com.zaxxer.hikari.HikariConfig - threadFactory...................internal
+2025-05-21 11:41:16.216 - DEBUG - com.zaxxer.hikari.HikariConfig - transactionIsolation............default
+2025-05-21 11:41:16.216 - DEBUG - com.zaxxer.hikari.HikariConfig - username........................"root"
+2025-05-21 11:41:16.216 - DEBUG - com.zaxxer.hikari.HikariConfig - validationTimeout...............5000
+2025-05-21 11:41:16.216 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-21 11:41:16.554 - INFO - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@19d3f6ad
+2025-05-21 11:41:16.556 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-21 11:41:16.598 - WARN - org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-21 11:41:16.598 - WARN - org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-05-21 11:41:16.657 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2025-05-21 11:41:16.673 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2e118fad
+2025-05-21 11:41:16.705 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After adding stats (total=2, active=0, idle=2, waiting=0)
+2025-05-21 11:41:16.726 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7cc72de9
+2025-05-21 11:41:16.770 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After adding stats (total=3, active=0, idle=3, waiting=0)
+2025-05-21 11:41:16.783 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4085ffb
+2025-05-21 11:41:16.816 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After adding stats (total=4, active=0, idle=4, waiting=0)
+2025-05-21 11:41:16.830 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4aeea6b5
+2025-05-21 11:41:16.863 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After adding stats (total=5, active=0, idle=5, waiting=0)
+2025-05-21 11:41:16.879 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@342955a1
+2025-05-21 11:41:16.911 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After adding stats (total=6, active=0, idle=6, waiting=0)
+2025-05-21 11:41:16.924 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@798f0be6
+2025-05-21 11:41:16.957 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After adding stats (total=7, active=0, idle=7, waiting=0)
+2025-05-21 11:41:16.969 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@60d48194
+2025-05-21 11:41:17.005 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After adding stats (total=8, active=0, idle=8, waiting=0)
+2025-05-21 11:41:17.017 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@445c57bf
+2025-05-21 11:41:17.053 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After adding stats (total=9, active=0, idle=9, waiting=0)
+2025-05-21 11:41:17.065 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6c5fe397
+2025-05-21 11:41:17.103 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 11:41:18.118 - INFO - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-21 11:41:18.429 - INFO - org.course.service.UserService - Перевірка наявності адміністратора за замовчуванням
+2025-05-21 11:41:18.818 - INFO - org.course.service.UserService - Адміністратор за замовчуванням створений
+2025-05-21 11:41:18.883 - DEBUG - o.c.config.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-05-21 11:41:18.934 - WARN - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-21 11:41:18.974 - INFO - o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-05-21 11:41:18.975 - WARN - o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2025-05-21 11:41:19.079 - INFO - o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-21 11:41:19.675 - DEBUG - _.s.w.s.HandlerMapping.Mappings - 
+	o.c.c.AuthController:
+	{POST [/api/auth/refresh-token]}: refreshToken(RefreshTokenRequest)
+	{POST [/api/auth/login]}: authenticateAndGetToken(AuthRequest)
+2025-05-21 11:41:19.696 - DEBUG - _.s.w.s.HandlerMapping.Mappings - 
+	o.c.c.DishesController:
+	{GET [/api/dishes/{size}/page/{page}]}: getDishesWithPagination(int,int)
+	{GET [/api/dishes/category/{category}]}: getDishesByCategory(String)
+	{POST [/api/dishes], consumes [multipart/form-data]}: createDishes(DishesCreateDTO,BindingResult,MultipartFile)
+	{GET [/api/dishes/{id}]}: getDishesById(long)
+	{PUT [/api/dishes/{id}], consumes [multipart/form-data]}: updateDishes(long,DishesDto,BindingResult,MultipartFile)
+	{GET [/api/dishes/sort/price/{order}]}: sortDishesByPrice(boolean)
+	{DELETE [/api/dishes/{id}]}: deleteDishes(long)
+	{GET [/api/dishes]}: getAllDishes()
+	{GET [/api/dishes/sort/name/{order}]}: sortDishesByName(boolean)
+2025-05-21 11:41:19.705 - DEBUG - _.s.w.s.HandlerMapping.Mappings - 
+	o.c.c.OrderController:
+	{GET [/api/orders/{size}/page/{page}]}: getAllOrdersWithPath(int,int,OrderStatus)
+	{GET [/api/orders/my/{size}/page/{page}]}: getMyOrdersWithPath(int,int)
+	{GET [/api/orders/{id}]}: getOrderById(long)
+	{PUT [/api/orders/{orderId}/viewed]}: markOrderAsViewed(long)
+	{GET [/api/orders/my]}: getMyOrders(int,int)
+	{PUT [/api/orders/{id}/status]}: updateOrderStatus(long,Map)
+	{PUT [/api/orders/{id}]}: updateOrder(long,OrderCreateDTO,BindingResult)
+	{POST [/api/orders]}: createOrder(OrderCreateDTO,BindingResult)
+	{GET [/api/orders/my/archive]}: getMyArchiveOrders(int,int)
+	{PUT [/api/orders/my/{id}]}: updateMyOrder(long,OrderCreateDTO,BindingResult)
+	{DELETE [/api/orders/{id}]}: deleteOrder(long)
+	{GET [/api/orders]}: getAllOrders(OrderStatus,int,int)
+2025-05-21 11:41:19.712 - DEBUG - _.s.w.s.HandlerMapping.Mappings - 
+	o.c.c.ReviewController:
+	{POST [/api/reviews]}: addReview(ReviewCreateDTO,BindingResult)
+	{DELETE [/api/reviews/{id}]}: deleteReview(Long)
+	{GET [/api/reviews/user/{userId}]}: getReviewsByUserId(Long)
+	{PUT [/api/reviews/{id}]}: updateReview(Long,ReviewUpdateDTO,BindingResult,Principal)
+	{GET [/api/reviews/sort]}: sortReviews(String,String)
+	{GET [/api/reviews/dish/{dishId}]}: getReviewsByDishId(Long)
+	{GET [/api/reviews]}: getAllReviews()
+2025-05-21 11:41:19.716 - DEBUG - _.s.w.s.HandlerMapping.Mappings - 
+	o.c.c.TableController:
+	{POST [/api/tables/{id}/reserve]}: reserveTable(long)
+	{PUT [/api/tables/{id}]}: updateTable(long,TableDto,BindingResult)
+	{DELETE [/api/tables/{id}]}: deleteTable(long)
+	{DELETE [/api/tables/{id}/reserve]}: cancelReservation(long)
+	{GET [/api/tables]}: getAllTables()
+	{POST [/api/tables]}: createTable(TableCreateDto,BindingResult)
+	{GET [/api/tables/available]}: getAvailableTables()
+	{GET [/api/tables/{id}]}: getTableById(long)
+2025-05-21 11:41:19.720 - DEBUG - _.s.w.s.HandlerMapping.Mappings - 
+	o.c.c.UserController:
+	{PUT [/api/users/{id}]}: updateUser(long,UserDto)
+	{POST [/api/users]}: createUser(UserCreateDTO,BindingResult)
+	{DELETE [/api/users/{id}]}: deleteUser(long)
+	{GET [/api/users/my-tables]}: getMyTables()
+	{GET [/api/users]}: getAllUsers()
+	{GET [/api/users/{id}]}: getUserById(long)
+	{GET [/api/users/sorted/name]}: getUsersSortedByName()
+2025-05-21 11:41:19.725 - DEBUG - _.s.w.s.HandlerMapping.Mappings - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2025-05-21 11:41:19.727 - DEBUG - o.s.w.s.m.m.a.RequestMappingHandlerMapping - 47 mappings in 'requestMappingHandlerMapping'
+2025-05-21 11:41:19.738 - DEBUG - _.s.w.s.HandlerMapping.Mappings - 'beanNameHandlerMapping' {}
+2025-05-21 11:41:19.828 - DEBUG - _.s.w.s.HandlerMapping.Mappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]], /uploads/**=ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], URL [file:uploads_data/], ServletContext [/]]}
+2025-05-21 11:41:19.873 - DEBUG - o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-05-21 11:41:19.962 - DEBUG - o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-05-21 11:41:19.999 - DEBUG - o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-05-21 11:41:20.118 - INFO - o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-21 11:41:20.139 - INFO - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-05-21 11:41:20.148 - INFO - org.course.CourseApplication - Started CourseApplication in 6.492 seconds (process running for 7.176)
+2025-05-21 11:41:20.585 - INFO - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-21 11:41:20.585 - INFO - o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-05-21 11:41:20.585 - DEBUG - o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-05-21 11:41:20.585 - DEBUG - o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-05-21 11:41:20.585 - DEBUG - o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-05-21 11:41:20.586 - DEBUG - o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2f96e49f
+2025-05-21 11:41:20.586 - DEBUG - o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@6375af2a
+2025-05-21 11:41:20.587 - DEBUG - o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-05-21 11:41:20.587 - INFO - o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-05-21 11:41:20.604 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /api/dishes
+2025-05-21 11:41:20.625 - DEBUG - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-21 11:41:20.627 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /api/dishes
+2025-05-21 11:41:20.628 - DEBUG - o.s.web.servlet.DispatcherServlet - GET "/api/dishes", parameters={}
+2025-05-21 11:41:20.630 - DEBUG - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.course.controller.DishesController#getAllDishes()
+2025-05-21 11:41:20.662 - INFO - org.course.service.DishesService - Отримання всіх страв з бази даних
+2025-05-21 11:41:20.671 - INFO - org.course.service.DishesService - Знайдено 0 страв
+2025-05-21 11:41:20.709 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-21 11:41:20.710 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{dishes=[]}]
+2025-05-21 11:41:20.726 - DEBUG - o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-21 11:41:46.669 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 11:41:46.669 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 11:42:08.313 - DEBUG - o.s.security.web.FilterChainProxy - Securing OPTIONS /api/auth/login
+2025-05-21 11:42:08.318 - DEBUG - o.s.security.web.FilterChainProxy - Securing POST /api/auth/login
+2025-05-21 11:42:08.319 - DEBUG - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-21 11:42:08.319 - DEBUG - o.s.security.web.FilterChainProxy - Secured POST /api/auth/login
+2025-05-21 11:42:08.319 - DEBUG - o.s.web.servlet.DispatcherServlet - POST "/api/auth/login", parameters={}
+2025-05-21 11:42:08.319 - DEBUG - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.course.controller.AuthController#authenticateAndGetToken(AuthRequest)
+2025-05-21 11:42:08.428 - DEBUG - o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [AuthRequest[email=admin@a, password=admin]]
+2025-05-21 11:42:08.460 - INFO - o.course.controller.AuthController - Отримано запит на логін для email: admin@a
+2025-05-21 11:42:08.699 - DEBUG - o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2025-05-21 11:42:08.704 - DEBUG - o.course.controller.AuthController - Аутентифікація успішна для користувача: admin@a
+2025-05-21 11:42:08.704 - INFO - org.course.service.JwtService - Generating token for user: admin@a
+2025-05-21 11:42:08.704 - INFO - org.course.service.JwtService - Issued At: Wed May 21 11:42:08 EEST 2025
+2025-05-21 11:42:08.704 - INFO - org.course.service.JwtService - Expiration Date: Thu May 22 11:42:08 EEST 2025
+2025-05-21 11:42:08.705 - INFO - org.course.service.JwtService - jwtExpiration value (ms): 86400000
+2025-05-21 11:42:08.765 - INFO - o.course.controller.AuthController - Логін успішний. Згенеровано access token та refresh token.
+2025-05-21 11:42:08.766 - INFO - o.course.controller.AuthController - Завершено обробку запиту на логін для email: admin@a
+2025-05-21 11:42:08.777 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-05-21 11:42:08.778 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [AuthResponse[accessToken=eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQURNSU4iLCJpZCI6MSwic3ViIjoiYWRtaW5AYSIsIm (truncated)...]
+2025-05-21 11:42:08.781 - DEBUG - o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-21 11:42:13.928 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /api/dishes
+2025-05-21 11:42:13.929 - DEBUG - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-21 11:42:13.929 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /api/dishes
+2025-05-21 11:42:13.929 - DEBUG - o.s.web.servlet.DispatcherServlet - GET "/api/dishes", parameters={}
+2025-05-21 11:42:13.929 - DEBUG - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.course.controller.DishesController#getAllDishes()
+2025-05-21 11:42:13.930 - INFO - org.course.service.DishesService - Отримання всіх страв з бази даних
+2025-05-21 11:42:13.942 - INFO - org.course.service.DishesService - Знайдено 0 страв
+2025-05-21 11:42:13.943 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-21 11:42:13.943 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{dishes=[]}]
+2025-05-21 11:42:13.944 - DEBUG - o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-21 11:42:16.684 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 11:42:16.684 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 11:42:16.797 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /api/tables/available
+2025-05-21 11:42:16.799 - DEBUG - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-21 11:42:16.799 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /api/tables/available
+2025-05-21 11:42:16.799 - DEBUG - o.s.web.servlet.DispatcherServlet - GET "/api/tables/available", parameters={}
+2025-05-21 11:42:16.800 - DEBUG - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.course.controller.TableController#getAvailableTables()
+2025-05-21 11:42:16.801 - INFO - org.course.service.TableService - Отримання списку вільних столиків...
+2025-05-21 11:42:16.811 - INFO - org.course.service.TableService - Знайдено 0 вільних столиків
+2025-05-21 11:42:16.812 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-21 11:42:16.813 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{availableTables=[]}]
+2025-05-21 11:42:16.814 - DEBUG - o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-21 11:42:46.685 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 11:42:46.685 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 11:43:16.692 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 11:43:16.692 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 11:43:46.708 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 11:43:46.708 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 11:44:10.330 - DEBUG - o.s.security.web.FilterChainProxy - Securing OPTIONS /api/dishes
+2025-05-21 11:44:10.334 - DEBUG - o.s.security.web.FilterChainProxy - Securing POST /api/dishes
+2025-05-21 11:44:10.375 - DEBUG - o.s.security.web.FilterChainProxy - Secured POST /api/dishes
+2025-05-21 11:44:10.375 - DEBUG - o.s.web.servlet.DispatcherServlet - POST "/api/dishes", parameters={multipart}
+2025-05-21 11:44:10.400 - DEBUG - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.course.controller.DishesController#createDishes(DishesCreateDTO, BindingResult, MultipartFile)
+2025-05-21 11:44:10.425 - DEBUG - o.s.w.s.m.m.a.RequestPartMethodArgumentResolver - Read "application/json" to [DishesCreateDTO[name=Fettuccine Alfredo, price=331.00, category=Pasta, description=італійська страва (truncated)...]
+2025-05-21 11:44:10.516 - INFO - o.course.service.FileStorageService - Збережено файл Alfredo-dc662e3.jpg як 5088e813-14f1-4248-a656-1eb865447387.jpg
+2025-05-21 11:44:10.517 - INFO - org.course.service.DishesService - Створення нової страви з даними: DishesCreateDTO[name=Fettuccine Alfredo, price=331.00, category=Pasta, description=італійська страва з пасти фетучіні, змішаної з вершковим маслом і молодим сиром пармезан., imageUrl=/uploads/images/dishes/5088e813-14f1-4248-a656-1eb865447387.jpg]
+2025-05-21 11:44:10.524 - INFO - org.course.service.DishesService - Страва створена з ID: 1
+2025-05-21 11:44:10.525 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-05-21 11:44:10.530 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{createdDish=DishesDto[id=1, name=Fettuccine Alfredo, category=Pasta, price=331.0, description=італі (truncated)...]
+2025-05-21 11:44:10.534 - DEBUG - o.s.web.servlet.DispatcherServlet - Completed 201 CREATED
+2025-05-21 11:44:12.545 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /api/tables/available
+2025-05-21 11:44:12.547 - DEBUG - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-21 11:44:12.547 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /api/tables/available
+2025-05-21 11:44:12.547 - DEBUG - o.s.web.servlet.DispatcherServlet - GET "/api/tables/available", parameters={}
+2025-05-21 11:44:12.548 - DEBUG - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.course.controller.TableController#getAvailableTables()
+2025-05-21 11:44:12.549 - INFO - org.course.service.TableService - Отримання списку вільних столиків...
+2025-05-21 11:44:12.559 - INFO - org.course.service.TableService - Знайдено 0 вільних столиків
+2025-05-21 11:44:12.561 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-21 11:44:12.561 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{availableTables=[]}]
+2025-05-21 11:44:12.563 - DEBUG - o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-21 11:44:13.480 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /api/dishes
+2025-05-21 11:44:13.481 - DEBUG - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-21 11:44:13.481 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /api/dishes
+2025-05-21 11:44:13.481 - DEBUG - o.s.web.servlet.DispatcherServlet - GET "/api/dishes", parameters={}
+2025-05-21 11:44:13.482 - DEBUG - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.course.controller.DishesController#getAllDishes()
+2025-05-21 11:44:13.484 - INFO - org.course.service.DishesService - Отримання всіх страв з бази даних
+2025-05-21 11:44:13.494 - INFO - org.course.service.DishesService - Знайдено 1 страв
+2025-05-21 11:44:13.498 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-21 11:44:13.498 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{dishes=[DishesDto[id=1, name=Fettuccine Alfredo, category=Pasta, price=331.0, description=італійськ (truncated)...]
+2025-05-21 11:44:13.500 - DEBUG - o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-21 11:44:13.516 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /uploads/images/dishes/5088e813-14f1-4248-a656-1eb865447387.jpg
+2025-05-21 11:44:13.517 - DEBUG - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-21 11:44:13.517 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /uploads/images/dishes/5088e813-14f1-4248-a656-1eb865447387.jpg
+2025-05-21 11:44:13.518 - DEBUG - o.s.web.servlet.DispatcherServlet - GET "/uploads/images/dishes/5088e813-14f1-4248-a656-1eb865447387.jpg", parameters={}
+2025-05-21 11:44:13.519 - DEBUG - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], URL [file:uploads_data/], ServletContext [/]]
+2025-05-21 11:44:13.538 - DEBUG - o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-21 11:44:16.719 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 11:44:16.719 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 11:44:16.927 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /uploads/images/dishes/5088e813-14f1-4248-a656-1eb865447387.jpg
+2025-05-21 11:44:16.928 - DEBUG - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-21 11:44:16.928 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /uploads/images/dishes/5088e813-14f1-4248-a656-1eb865447387.jpg
+2025-05-21 11:44:16.928 - DEBUG - o.s.web.servlet.DispatcherServlet - GET "/uploads/images/dishes/5088e813-14f1-4248-a656-1eb865447387.jpg", parameters={}
+2025-05-21 11:44:16.929 - DEBUG - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], URL [file:uploads_data/], ServletContext [/]]
+2025-05-21 11:44:16.933 - DEBUG - o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-21 11:44:20.055 - DEBUG - o.s.security.web.FilterChainProxy - Securing OPTIONS /api/reviews/dish/1
+2025-05-21 11:44:20.060 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /api/reviews/dish/1
+2025-05-21 11:44:20.072 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /api/reviews/dish/1
+2025-05-21 11:44:20.073 - DEBUG - o.s.web.servlet.DispatcherServlet - GET "/api/reviews/dish/1", parameters={}
+2025-05-21 11:44:20.073 - DEBUG - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.course.controller.ReviewController#getReviewsByDishId(Long)
+2025-05-21 11:44:20.076 - INFO - org.course.service.ReviewService - Отримання відгуків для блюда з ID: 1
+2025-05-21 11:44:20.082 - INFO - org.course.service.ReviewService - Знайдено 0 відгуків для блюда з ID 1
+2025-05-21 11:44:20.083 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-21 11:44:20.083 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{reviews=[]}]
+2025-05-21 11:44:20.085 - DEBUG - o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-21 11:44:30.713 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /uploads/images/dishes/5088e813-14f1-4248-a656-1eb865447387.jpg
+2025-05-21 11:44:30.714 - DEBUG - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-21 11:44:30.714 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /uploads/images/dishes/5088e813-14f1-4248-a656-1eb865447387.jpg
+2025-05-21 11:44:30.715 - DEBUG - o.s.web.servlet.DispatcherServlet - GET "/uploads/images/dishes/5088e813-14f1-4248-a656-1eb865447387.jpg", parameters={}
+2025-05-21 11:44:30.715 - DEBUG - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], URL [file:uploads_data/], ServletContext [/]]
+2025-05-21 11:44:30.719 - DEBUG - o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-21 11:44:46.723 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 11:44:46.723 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 11:45:16.729 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 11:45:16.729 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 11:45:46.736 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 11:45:46.736 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 11:46:16.743 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 11:46:16.743 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 11:46:46.745 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 11:46:46.745 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 11:47:16.759 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 11:47:16.759 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 11:47:46.763 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 11:47:46.763 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 11:48:06.173 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /api/dishes
+2025-05-21 11:48:06.174 - DEBUG - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-21 11:48:06.174 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /api/dishes
+2025-05-21 11:48:06.174 - DEBUG - o.s.web.servlet.DispatcherServlet - GET "/api/dishes", parameters={}
+2025-05-21 11:48:06.174 - DEBUG - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.course.controller.DishesController#getAllDishes()
+2025-05-21 11:48:06.177 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-21 11:48:06.177 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{dishes=[DishesDto[id=1, name=Fettuccine Alfredo, category=Pasta, price=331.0, description=італійськ (truncated)...]
+2025-05-21 11:48:06.178 - DEBUG - o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-21 11:48:06.186 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /uploads/images/dishes/5088e813-14f1-4248-a656-1eb865447387.jpg
+2025-05-21 11:48:06.187 - DEBUG - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-21 11:48:06.187 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /uploads/images/dishes/5088e813-14f1-4248-a656-1eb865447387.jpg
+2025-05-21 11:48:06.187 - DEBUG - o.s.web.servlet.DispatcherServlet - GET "/uploads/images/dishes/5088e813-14f1-4248-a656-1eb865447387.jpg", parameters={}
+2025-05-21 11:48:06.188 - DEBUG - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], URL [file:uploads_data/], ServletContext [/]]
+2025-05-21 11:48:06.190 - DEBUG - o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-21 11:48:16.769 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 11:48:16.770 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 11:48:30.170 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /api/dishes
+2025-05-21 11:48:30.171 - DEBUG - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-21 11:48:30.171 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /api/dishes
+2025-05-21 11:48:30.171 - DEBUG - o.s.web.servlet.DispatcherServlet - GET "/api/dishes", parameters={}
+2025-05-21 11:48:30.171 - DEBUG - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.course.controller.DishesController#getAllDishes()
+2025-05-21 11:48:30.172 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-21 11:48:30.173 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{dishes=[DishesDto[id=1, name=Fettuccine Alfredo, category=Pasta, price=331.0, description=італійськ (truncated)...]
+2025-05-21 11:48:30.174 - DEBUG - o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-21 11:48:30.183 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /uploads/images/dishes/5088e813-14f1-4248-a656-1eb865447387.jpg
+2025-05-21 11:48:30.183 - DEBUG - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-21 11:48:30.184 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /uploads/images/dishes/5088e813-14f1-4248-a656-1eb865447387.jpg
+2025-05-21 11:48:30.184 - DEBUG - o.s.web.servlet.DispatcherServlet - GET "/uploads/images/dishes/5088e813-14f1-4248-a656-1eb865447387.jpg", parameters={}
+2025-05-21 11:48:30.185 - DEBUG - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], URL [file:uploads_data/], ServletContext [/]]
+2025-05-21 11:48:30.189 - DEBUG - o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-21 11:48:46.771 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 11:48:46.771 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 11:49:10.243 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /api/dishes
+2025-05-21 11:49:10.245 - DEBUG - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-21 11:49:10.245 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /api/dishes
+2025-05-21 11:49:10.245 - DEBUG - o.s.web.servlet.DispatcherServlet - GET "/api/dishes", parameters={}
+2025-05-21 11:49:10.246 - DEBUG - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.course.controller.DishesController#getAllDishes()
+2025-05-21 11:49:10.247 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-21 11:49:10.247 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{dishes=[DishesDto[id=1, name=Fettuccine Alfredo, category=Pasta, price=331.0, description=італійськ (truncated)...]
+2025-05-21 11:49:10.248 - DEBUG - o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-21 11:49:10.255 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /uploads/images/dishes/5088e813-14f1-4248-a656-1eb865447387.jpg
+2025-05-21 11:49:10.255 - DEBUG - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-21 11:49:10.255 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /uploads/images/dishes/5088e813-14f1-4248-a656-1eb865447387.jpg
+2025-05-21 11:49:10.255 - DEBUG - o.s.web.servlet.DispatcherServlet - GET "/uploads/images/dishes/5088e813-14f1-4248-a656-1eb865447387.jpg", parameters={}
+2025-05-21 11:49:10.256 - DEBUG - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], URL [file:uploads_data/], ServletContext [/]]
+2025-05-21 11:49:10.258 - DEBUG - o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-21 11:49:16.772 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 11:49:16.772 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 11:49:46.784 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 11:49:46.784 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 11:50:16.791 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 11:50:16.791 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 11:50:46.802 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 11:50:46.802 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 11:50:55.163 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /api/dishes
+2025-05-21 11:50:55.163 - DEBUG - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-21 11:50:55.163 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /api/dishes
+2025-05-21 11:50:55.164 - DEBUG - o.s.web.servlet.DispatcherServlet - GET "/api/dishes", parameters={}
+2025-05-21 11:50:55.164 - DEBUG - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.course.controller.DishesController#getAllDishes()
+2025-05-21 11:50:55.165 - INFO - org.course.service.DishesService - Отримання всіх страв з бази даних
+2025-05-21 11:50:55.174 - INFO - org.course.service.DishesService - Знайдено 1 страв
+2025-05-21 11:50:55.174 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-21 11:50:55.174 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{dishes=[DishesDto[id=1, name=Fettuccine Alfredo, category=Pasta, price=331.0, description=італійськ (truncated)...]
+2025-05-21 11:50:55.176 - DEBUG - o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-21 11:50:55.183 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /uploads/images/dishes/5088e813-14f1-4248-a656-1eb865447387.jpg
+2025-05-21 11:50:55.184 - DEBUG - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-21 11:50:55.184 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /uploads/images/dishes/5088e813-14f1-4248-a656-1eb865447387.jpg
+2025-05-21 11:50:55.184 - DEBUG - o.s.web.servlet.DispatcherServlet - GET "/uploads/images/dishes/5088e813-14f1-4248-a656-1eb865447387.jpg", parameters={}
+2025-05-21 11:50:55.185 - DEBUG - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], URL [file:uploads_data/], ServletContext [/]]
+2025-05-21 11:50:55.187 - DEBUG - o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-21 11:51:09.579 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /api/dishes
+2025-05-21 11:51:09.580 - DEBUG - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-21 11:51:09.580 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /api/dishes
+2025-05-21 11:51:09.580 - DEBUG - o.s.web.servlet.DispatcherServlet - GET "/api/dishes", parameters={}
+2025-05-21 11:51:09.580 - DEBUG - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.course.controller.DishesController#getAllDishes()
+2025-05-21 11:51:09.582 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-21 11:51:09.582 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{dishes=[DishesDto[id=1, name=Fettuccine Alfredo, category=Pasta, price=331.0, description=італійськ (truncated)...]
+2025-05-21 11:51:09.584 - DEBUG - o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-21 11:51:09.605 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /uploads/images/dishes/5088e813-14f1-4248-a656-1eb865447387.jpg
+2025-05-21 11:51:09.606 - DEBUG - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-21 11:51:09.606 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /uploads/images/dishes/5088e813-14f1-4248-a656-1eb865447387.jpg
+2025-05-21 11:51:09.606 - DEBUG - o.s.web.servlet.DispatcherServlet - GET "/uploads/images/dishes/5088e813-14f1-4248-a656-1eb865447387.jpg", parameters={}
+2025-05-21 11:51:09.607 - DEBUG - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], URL [file:uploads_data/], ServletContext [/]]
+2025-05-21 11:51:09.610 - DEBUG - o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-21 11:51:10.572 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /uploads/images/dishes/5088e813-14f1-4248-a656-1eb865447387.jpg
+2025-05-21 11:51:10.572 - DEBUG - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-21 11:51:10.573 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /uploads/images/dishes/5088e813-14f1-4248-a656-1eb865447387.jpg
+2025-05-21 11:51:10.573 - DEBUG - o.s.web.servlet.DispatcherServlet - GET "/uploads/images/dishes/5088e813-14f1-4248-a656-1eb865447387.jpg", parameters={}
+2025-05-21 11:51:10.573 - DEBUG - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], URL [file:uploads_data/], ServletContext [/]]
+2025-05-21 11:51:10.577 - DEBUG - o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-21 11:51:15.880 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /uploads/images/dishes/5088e813-14f1-4248-a656-1eb865447387.jpg
+2025-05-21 11:51:15.880 - DEBUG - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-21 11:51:15.880 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /uploads/images/dishes/5088e813-14f1-4248-a656-1eb865447387.jpg
+2025-05-21 11:51:15.880 - DEBUG - o.s.web.servlet.DispatcherServlet - GET "/uploads/images/dishes/5088e813-14f1-4248-a656-1eb865447387.jpg", parameters={}
+2025-05-21 11:51:15.881 - DEBUG - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], URL [file:uploads_data/], ServletContext [/]]
+2025-05-21 11:51:15.884 - DEBUG - o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-21 11:51:16.804 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 11:51:16.805 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 11:51:30.906 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /uploads/images/dishes/5088e813-14f1-4248-a656-1eb865447387.jpg
+2025-05-21 11:51:30.906 - DEBUG - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-21 11:51:30.906 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /uploads/images/dishes/5088e813-14f1-4248-a656-1eb865447387.jpg
+2025-05-21 11:51:30.906 - DEBUG - o.s.web.servlet.DispatcherServlet - GET "/uploads/images/dishes/5088e813-14f1-4248-a656-1eb865447387.jpg", parameters={}
+2025-05-21 11:51:30.907 - DEBUG - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], URL [file:uploads_data/], ServletContext [/]]
+2025-05-21 11:51:30.911 - DEBUG - o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-21 11:51:46.806 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 11:51:46.806 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 11:52:16.841 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 11:52:16.841 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 11:52:44.847 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /api/dishes
+2025-05-21 11:52:44.848 - DEBUG - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-21 11:52:44.848 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /api/dishes
+2025-05-21 11:52:44.849 - DEBUG - o.s.web.servlet.DispatcherServlet - GET "/api/dishes", parameters={}
+2025-05-21 11:52:44.849 - DEBUG - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.course.controller.DishesController#getAllDishes()
+2025-05-21 11:52:44.850 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-21 11:52:44.850 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{dishes=[DishesDto[id=1, name=Fettuccine Alfredo, category=Pasta, price=331.0, description=італійськ (truncated)...]
+2025-05-21 11:52:44.852 - DEBUG - o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-21 11:52:44.876 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /uploads/images/dishes/5088e813-14f1-4248-a656-1eb865447387.jpg
+2025-05-21 11:52:44.877 - DEBUG - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-21 11:52:44.877 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /uploads/images/dishes/5088e813-14f1-4248-a656-1eb865447387.jpg
+2025-05-21 11:52:44.877 - DEBUG - o.s.web.servlet.DispatcherServlet - GET "/uploads/images/dishes/5088e813-14f1-4248-a656-1eb865447387.jpg", parameters={}
+2025-05-21 11:52:44.877 - DEBUG - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], URL [file:uploads_data/], ServletContext [/]]
+2025-05-21 11:52:44.881 - DEBUG - o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-21 11:52:46.848 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 11:52:46.848 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 11:53:16.872 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 11:53:16.872 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 11:53:46.886 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 11:53:46.886 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 11:54:16.886 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 11:54:16.886 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 11:54:46.890 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 11:54:46.890 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 11:55:02.497 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /api/dishes
+2025-05-21 11:55:02.498 - DEBUG - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-21 11:55:02.499 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /api/dishes
+2025-05-21 11:55:02.499 - DEBUG - o.s.web.servlet.DispatcherServlet - GET "/api/dishes", parameters={}
+2025-05-21 11:55:02.499 - DEBUG - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.course.controller.DishesController#getAllDishes()
+2025-05-21 11:55:02.502 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-21 11:55:02.502 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{dishes=[DishesDto[id=1, name=Fettuccine Alfredo, category=Pasta, price=331.0, description=італійськ (truncated)...]
+2025-05-21 11:55:02.504 - DEBUG - o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-21 11:55:02.514 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /uploads/images/dishes/5088e813-14f1-4248-a656-1eb865447387.jpg
+2025-05-21 11:55:02.515 - DEBUG - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-21 11:55:02.515 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /uploads/images/dishes/5088e813-14f1-4248-a656-1eb865447387.jpg
+2025-05-21 11:55:02.515 - DEBUG - o.s.web.servlet.DispatcherServlet - GET "/uploads/images/dishes/5088e813-14f1-4248-a656-1eb865447387.jpg", parameters={}
+2025-05-21 11:55:02.516 - DEBUG - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], URL [file:uploads_data/], ServletContext [/]]
+2025-05-21 11:55:02.519 - DEBUG - o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-21 11:55:16.901 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 11:55:16.901 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 11:55:46.907 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 11:55:46.907 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 11:56:16.915 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 11:56:16.915 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 11:56:46.923 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 11:56:46.923 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 11:57:16.938 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 11:57:16.938 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 11:57:46.945 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 11:57:46.945 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 11:58:16.961 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 11:58:16.961 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 11:58:46.964 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 11:58:46.964 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 11:58:47.725 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /api/dishes
+2025-05-21 11:58:47.726 - DEBUG - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-21 11:58:47.726 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /api/dishes
+2025-05-21 11:58:47.727 - DEBUG - o.s.web.servlet.DispatcherServlet - GET "/api/dishes", parameters={}
+2025-05-21 11:58:47.727 - DEBUG - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.course.controller.DishesController#getAllDishes()
+2025-05-21 11:58:47.728 - INFO - org.course.service.DishesService - Отримання всіх страв з бази даних
+2025-05-21 11:58:47.756 - INFO - org.course.service.DishesService - Знайдено 1 страв
+2025-05-21 11:58:47.757 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-21 11:58:47.758 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{dishes=[DishesDto[id=1, name=Fettuccine Alfredo, category=Pasta, price=331.0, description=італійськ (truncated)...]
+2025-05-21 11:58:47.760 - DEBUG - o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-21 11:58:47.771 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /uploads/images/dishes/5088e813-14f1-4248-a656-1eb865447387.jpg
+2025-05-21 11:58:47.771 - DEBUG - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-21 11:58:47.771 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /uploads/images/dishes/5088e813-14f1-4248-a656-1eb865447387.jpg
+2025-05-21 11:58:47.771 - DEBUG - o.s.web.servlet.DispatcherServlet - GET "/uploads/images/dishes/5088e813-14f1-4248-a656-1eb865447387.jpg", parameters={}
+2025-05-21 11:58:47.772 - DEBUG - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], URL [file:uploads_data/], ServletContext [/]]
+2025-05-21 11:58:47.774 - DEBUG - o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-21 11:59:02.903 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /uploads/images/dishes/5088e813-14f1-4248-a656-1eb865447387.jpg
+2025-05-21 11:59:02.904 - DEBUG - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-21 11:59:02.904 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /uploads/images/dishes/5088e813-14f1-4248-a656-1eb865447387.jpg
+2025-05-21 11:59:02.904 - DEBUG - o.s.web.servlet.DispatcherServlet - GET "/uploads/images/dishes/5088e813-14f1-4248-a656-1eb865447387.jpg", parameters={}
+2025-05-21 11:59:02.905 - DEBUG - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], URL [file:uploads_data/], ServletContext [/]]
+2025-05-21 11:59:02.908 - DEBUG - o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-21 11:59:06.484 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /uploads/images/dishes/5088e813-14f1-4248-a656-1eb865447387.jpg
+2025-05-21 11:59:06.485 - DEBUG - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-21 11:59:06.485 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /uploads/images/dishes/5088e813-14f1-4248-a656-1eb865447387.jpg
+2025-05-21 11:59:06.485 - DEBUG - o.s.web.servlet.DispatcherServlet - GET "/uploads/images/dishes/5088e813-14f1-4248-a656-1eb865447387.jpg", parameters={}
+2025-05-21 11:59:06.486 - DEBUG - o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], URL [file:uploads_data/], ServletContext [/]]
+2025-05-21 11:59:06.490 - DEBUG - o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-21 11:59:16.979 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 11:59:16.979 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 11:59:46.985 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 11:59:46.985 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.

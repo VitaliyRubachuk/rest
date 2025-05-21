@@ -1,0 +1,36 @@
+.archive-orders-page {
+    padding: 20px;
+    background-color: #222;
+    color: #eee;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.archive-orders-page h2 {
+    color: #f44336;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.archived-orders-list {
+    list-style: none;
+    padding: 0;
+}
+
+.archived-order-item {
+    background-color: #333;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border: 1px solid #444;
+}
+
+.archived-order-item p {
+    margin: 5px 0;
+}
+
+.archived-order-item strong {
+    color: #f44336;
+}

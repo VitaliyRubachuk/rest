@@ -1,0 +1,273 @@
+/* src/css/Header.css */
+
+.site-header {
+    background-color: #2c2c2c;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.header-content {
+    max-width: 1800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo img {
+    height: 60px;
+    margin-right: 2rem;
+}
+
+.logo a span {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.nav-buttons > * {
+    margin-left: 0.3rem;
+}
+
+.nav-buttons > *:first-child {
+    margin-left: 0;
+}
+
+.nav-buttons a,
+.nav-buttons button {
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s ease, transform 0.1s ease, box-shadow 0.1s ease;
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+}
+
+.nav-buttons a:hover,
+.nav-buttons button:hover {
+    color: #ffcc00;
+}
+
+.nav-buttons a:active,
+.nav-buttons button:active {
+    transform: scale(0.95);
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.nav-buttons a:focus,
+.nav-buttons button:focus {
+    outline: none;
+}
+
+.nav-buttons-button {
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s ease, transform 0.1s ease, box-shadow 0.1s ease;
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+}
+
+.nav-buttons-button:hover {
+    color: #ffcc00;
+}
+
+.nav-buttons-button:active {
+    transform: scale(0.95);
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.nav-buttons-button:focus {
+    outline: none;
+}
+
+.admin-dropdown {
+    position: relative;
+    margin-left: 1rem;
+}
+
+.admin-dropdown button {
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s ease, transform 0.1s ease, box-shadow 0.1s ease;
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+}
+
+.admin-dropdown button:hover {}
+
+.admin-dropdown button:active,
+.admin-dropdown button.active {
+    transform: scale(0.95);
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.admin-dropdown button:focus {
+    outline: none;
+}
+
+.admin-menu {
+    position: absolute;
+    top: calc(100% + 0.4rem);
+    left: -40%;
+    background-color: #333;
+    border: 1px solid #555;
+    list-style: none;
+    padding: 0.5rem 0;
+    width: auto;
+    margin: 0;
+    border-radius: 5px;
+    z-index: 10;
+    min-width: 200px;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+}
+
+.admin-menu li {
+    padding: 0;
+}
+
+.admin-menu li button,
+.admin-menu li a {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 1.25rem;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.1s ease;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.admin-menu li button:hover,
+.admin-menu li a:hover {
+    background-color: #555;
+    color: #ffcc00;
+}
+
+.admin-menu li button:active,
+.admin-menu li a:active {
+    transform: scale(0.98);
+}
+
+.settings-dropdown {
+    position: relative;
+    margin-left: 1rem;
+}
+
+.settings-dropdown button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.settings-icon {
+    height: 30px;
+    width: 30px;
+    color: #fff;
+    vertical-align: middle;
+}
+
+.settings-menu {
+    position: absolute;
+    top: calc(100% + 0.4rem);
+    left: auto;
+    right: 0;
+    background-color: #333;
+    border: 1px solid #555;
+    list-style: none;
+    padding: 0.5rem 0;
+    width: 200px;
+    margin: 0;
+    border-radius: 5px;
+    z-index: 10;
+    min-width: 150px;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    transform-origin: top right;
+}
+
+.settings-menu li a,
+.settings-menu li button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 1.25rem;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.1s ease;
+    min-width: 120px;
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+
+.settings-menu li a:hover,
+.settings-menu li button:hover {
+    background-color: #555;
+    color: #ffcc00;
+}
+
+.settings-menu li a:active,
+.settings-menu li button:active {
+    transform: scale(0.98);
+}
+
+.settings-menu li .nav-buttons-button {
+    display: block;
+    width: 100%;
+    text-align: left;
+    min-width: 120px;
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+
+.settings-menu .menu-separator {
+    height: 1px;
+    background-color: #555;
+    margin: 0.5rem 0;
+}

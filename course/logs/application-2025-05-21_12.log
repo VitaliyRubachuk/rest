@@ -1,0 +1,392 @@
+2025-05-21 12:48:14.539 - DEBUG - o.s.security.web.FilterChainProxy - Securing POST /api/tables/3/reserve
+2025-05-21 12:48:14.549 - DEBUG - o.s.security.web.FilterChainProxy - Secured POST /api/tables/3/reserve
+2025-05-21 12:48:14.549 - DEBUG - o.s.web.servlet.DispatcherServlet - POST "/api/tables/3/reserve", parameters={}
+2025-05-21 12:48:14.549 - DEBUG - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.course.controller.TableController#reserveTable(long, TableReserveDto, BindingResult)
+2025-05-21 12:48:14.550 - DEBUG - o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [TableReserveDto[reservedUntil=2025-05-21T06:52]]
+2025-05-21 12:48:14.551 - INFO - org.course.service.TableService - Резервування столика з ID: 3 до 2025-05-21T06:52
+2025-05-21 12:48:14.555 - WARN - org.course.service.TableService - Час резервації має бути в майбутньому і мінімум на 5 хвилин вперед.
+2025-05-21 12:48:14.556 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-21 12:48:14.556 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{error=Час резервації має бути в майбутньому і мінімум на 5 хвилин вперед.}]
+2025-05-21 12:48:14.557 - DEBUG - o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2025-05-21 12:48:21.589 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 12:48:21.589 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 12:48:51.594 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 12:48:51.594 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 12:49:21.596 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 12:49:21.596 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 12:49:51.604 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 12:49:51.604 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 12:50:21.618 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 12:50:21.618 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 12:50:51.632 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 12:50:51.632 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 12:51:21.648 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 12:51:21.648 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 12:51:51.663 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 12:51:51.663 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 12:52:21.674 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 12:52:21.674 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 12:52:51.675 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 12:52:51.675 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 12:53:19.154 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /api/tables/available
+2025-05-21 12:53:19.154 - DEBUG - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-21 12:53:19.154 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /api/tables/available
+2025-05-21 12:53:19.154 - DEBUG - o.s.web.servlet.DispatcherServlet - GET "/api/tables/available", parameters={}
+2025-05-21 12:53:19.154 - DEBUG - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.course.controller.TableController#getAvailableTables()
+2025-05-21 12:53:19.155 - INFO - org.course.service.TableService - Отримання списку вільних столиків...
+2025-05-21 12:53:19.163 - INFO - org.course.service.TableService - Знайдено 1 вільних столиків
+2025-05-21 12:53:19.163 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-21 12:53:19.163 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{availableTables=[TableDto[id=3, tableNumber=3, seats=1, isReserved=false, reservedByUserId=null, re (truncated)...]
+2025-05-21 12:53:19.164 - DEBUG - o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-21 12:53:21.690 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 12:53:21.690 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 12:53:51.705 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 12:53:51.705 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 12:54:00.965 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /api/tables/available
+2025-05-21 12:54:00.966 - DEBUG - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-21 12:54:00.966 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /api/tables/available
+2025-05-21 12:54:00.966 - DEBUG - o.s.web.servlet.DispatcherServlet - GET "/api/tables/available", parameters={}
+2025-05-21 12:54:00.967 - DEBUG - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.course.controller.TableController#getAvailableTables()
+2025-05-21 12:54:00.968 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-21 12:54:00.968 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{availableTables=[TableDto[id=3, tableNumber=3, seats=1, isReserved=false, reservedByUserId=null, re (truncated)...]
+2025-05-21 12:54:00.970 - DEBUG - o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-21 12:54:07.314 - INFO - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-21 12:54:07.317 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-21 12:54:07.317 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 12:54:07.318 - DEBUG - com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@50f05307: (connection evicted)
+2025-05-21 12:54:07.321 - DEBUG - com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@6dcec6be: (connection evicted)
+2025-05-21 12:54:07.322 - DEBUG - com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@67539f8: (connection evicted)
+2025-05-21 12:54:07.322 - DEBUG - com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@7e794f64: (connection evicted)
+2025-05-21 12:54:07.322 - DEBUG - com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@63497950: (connection evicted)
+2025-05-21 12:54:07.323 - DEBUG - com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@6039681c: (connection evicted)
+2025-05-21 12:54:07.324 - DEBUG - com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@673191b0: (connection evicted)
+2025-05-21 12:54:07.324 - DEBUG - com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@14f497a2: (connection evicted)
+2025-05-21 12:54:07.324 - DEBUG - com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@3bc0f72c: (connection evicted)
+2025-05-21 12:54:07.325 - DEBUG - com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@71d613e: (connection evicted)
+2025-05-21 12:54:07.325 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+2025-05-21 12:54:07.325 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-21 12:54:13.232 - DEBUG - org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2025-05-21 12:54:13.274 - INFO - org.course.CourseApplication - Starting CourseApplication using Java 22.0.2 with PID 10740 (F:\4 курс\Диплом f\course\target\classes started by Віталій in F:\4 курс\Диплом f\course)
+2025-05-21 12:54:13.274 - DEBUG - org.course.CourseApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
+2025-05-21 12:54:13.275 - INFO - org.course.CourseApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-21 12:54:13.948 - INFO - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-21 12:54:14.016 - INFO - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 61 ms. Found 6 JPA repository interfaces.
+2025-05-21 12:54:14.540 - INFO - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-05-21 12:54:14.550 - INFO - o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-21 12:54:14.553 - INFO - o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-21 12:54:14.554 - INFO - o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-05-21 12:54:14.621 - INFO - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-21 12:54:14.621 - INFO - o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1298 ms
+2025-05-21 12:54:14.668 - DEBUG - com.zaxxer.hikari.HikariConfig - Driver class com.mysql.cj.jdbc.Driver found in Thread context class loader TomcatEmbeddedWebappClassLoader
+  context: ROOT
+  delegate: true
+----------> Parent Classloader:
+jdk.internal.loader.ClassLoaders$AppClassLoader@3fee733d
+
+2025-05-21 12:54:15.106 - INFO - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-21 12:54:15.134 - DEBUG - com.zaxxer.hikari.HikariConfig - HikariPool-1 - configuration:
+2025-05-21 12:54:15.136 - DEBUG - com.zaxxer.hikari.HikariConfig - allowPoolSuspension.............false
+2025-05-21 12:54:15.137 - DEBUG - com.zaxxer.hikari.HikariConfig - autoCommit......................true
+2025-05-21 12:54:15.137 - DEBUG - com.zaxxer.hikari.HikariConfig - catalog.........................none
+2025-05-21 12:54:15.137 - DEBUG - com.zaxxer.hikari.HikariConfig - connectionInitSql...............none
+2025-05-21 12:54:15.137 - DEBUG - com.zaxxer.hikari.HikariConfig - connectionTestQuery.............none
+2025-05-21 12:54:15.137 - DEBUG - com.zaxxer.hikari.HikariConfig - connectionTimeout...............30000
+2025-05-21 12:54:15.137 - DEBUG - com.zaxxer.hikari.HikariConfig - dataSource......................none
+2025-05-21 12:54:15.138 - DEBUG - com.zaxxer.hikari.HikariConfig - dataSourceClassName.............none
+2025-05-21 12:54:15.138 - DEBUG - com.zaxxer.hikari.HikariConfig - dataSourceJNDI..................none
+2025-05-21 12:54:15.138 - DEBUG - com.zaxxer.hikari.HikariConfig - dataSourceProperties............{password=<masked>}
+2025-05-21 12:54:15.138 - DEBUG - com.zaxxer.hikari.HikariConfig - driverClassName................."com.mysql.cj.jdbc.Driver"
+2025-05-21 12:54:15.138 - DEBUG - com.zaxxer.hikari.HikariConfig - exceptionOverrideClassName......none
+2025-05-21 12:54:15.138 - DEBUG - com.zaxxer.hikari.HikariConfig - healthCheckProperties...........{}
+2025-05-21 12:54:15.138 - DEBUG - com.zaxxer.hikari.HikariConfig - healthCheckRegistry.............none
+2025-05-21 12:54:15.138 - DEBUG - com.zaxxer.hikari.HikariConfig - idleTimeout.....................600000
+2025-05-21 12:54:15.138 - DEBUG - com.zaxxer.hikari.HikariConfig - initializationFailTimeout.......1
+2025-05-21 12:54:15.139 - DEBUG - com.zaxxer.hikari.HikariConfig - isolateInternalQueries..........false
+2025-05-21 12:54:15.139 - DEBUG - com.zaxxer.hikari.HikariConfig - jdbcUrl.........................jdbc:mysql://localhost:3306/rest
+2025-05-21 12:54:15.139 - DEBUG - com.zaxxer.hikari.HikariConfig - keepaliveTime...................0
+2025-05-21 12:54:15.139 - DEBUG - com.zaxxer.hikari.HikariConfig - leakDetectionThreshold..........0
+2025-05-21 12:54:15.139 - DEBUG - com.zaxxer.hikari.HikariConfig - maxLifetime.....................1800000
+2025-05-21 12:54:15.139 - DEBUG - com.zaxxer.hikari.HikariConfig - maximumPoolSize.................10
+2025-05-21 12:54:15.139 - DEBUG - com.zaxxer.hikari.HikariConfig - metricRegistry..................none
+2025-05-21 12:54:15.139 - DEBUG - com.zaxxer.hikari.HikariConfig - metricsTrackerFactory...........none
+2025-05-21 12:54:15.139 - DEBUG - com.zaxxer.hikari.HikariConfig - minimumIdle.....................10
+2025-05-21 12:54:15.139 - DEBUG - com.zaxxer.hikari.HikariConfig - password........................<masked>
+2025-05-21 12:54:15.139 - DEBUG - com.zaxxer.hikari.HikariConfig - poolName........................"HikariPool-1"
+2025-05-21 12:54:15.139 - DEBUG - com.zaxxer.hikari.HikariConfig - readOnly........................false
+2025-05-21 12:54:15.140 - DEBUG - com.zaxxer.hikari.HikariConfig - registerMbeans..................false
+2025-05-21 12:54:15.140 - DEBUG - com.zaxxer.hikari.HikariConfig - scheduledExecutor...............none
+2025-05-21 12:54:15.140 - DEBUG - com.zaxxer.hikari.HikariConfig - schema..........................none
+2025-05-21 12:54:15.140 - DEBUG - com.zaxxer.hikari.HikariConfig - threadFactory...................internal
+2025-05-21 12:54:15.140 - DEBUG - com.zaxxer.hikari.HikariConfig - transactionIsolation............default
+2025-05-21 12:54:15.140 - DEBUG - com.zaxxer.hikari.HikariConfig - username........................"root"
+2025-05-21 12:54:15.141 - DEBUG - com.zaxxer.hikari.HikariConfig - validationTimeout...............5000
+2025-05-21 12:54:15.141 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-21 12:54:15.462 - INFO - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@57a982f9
+2025-05-21 12:54:15.464 - INFO - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-21 12:54:15.505 - WARN - org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-21 12:54:15.507 - WARN - org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-05-21 12:54:15.572 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+2025-05-21 12:54:15.587 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7f2b505c
+2025-05-21 12:54:15.619 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After adding stats (total=2, active=0, idle=2, waiting=0)
+2025-05-21 12:54:15.633 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2aee899c
+2025-05-21 12:54:15.667 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After adding stats (total=3, active=0, idle=3, waiting=0)
+2025-05-21 12:54:15.680 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@52f00873
+2025-05-21 12:54:15.714 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After adding stats (total=4, active=0, idle=4, waiting=0)
+2025-05-21 12:54:15.728 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@45651a
+2025-05-21 12:54:15.761 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After adding stats (total=5, active=0, idle=5, waiting=0)
+2025-05-21 12:54:15.774 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@71b15c51
+2025-05-21 12:54:15.807 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After adding stats (total=6, active=0, idle=6, waiting=0)
+2025-05-21 12:54:15.820 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2a8f075f
+2025-05-21 12:54:15.854 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After adding stats (total=7, active=0, idle=7, waiting=0)
+2025-05-21 12:54:15.866 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@37cb19a8
+2025-05-21 12:54:15.901 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After adding stats (total=8, active=0, idle=8, waiting=0)
+2025-05-21 12:54:15.914 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@79e822dc
+2025-05-21 12:54:15.948 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After adding stats (total=9, active=0, idle=9, waiting=0)
+2025-05-21 12:54:15.963 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@460fb612
+2025-05-21 12:54:15.995 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 12:54:16.682 - INFO - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-21 12:54:16.987 - INFO - org.course.service.UserService - Перевірка наявності адміністратора за замовчуванням
+2025-05-21 12:54:17.141 - INFO - org.course.service.UserService - Адміністратор за замовчуванням вже існує
+2025-05-21 12:54:17.199 - DEBUG - o.c.config.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-05-21 12:54:17.242 - WARN - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-21 12:54:17.284 - INFO - o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-05-21 12:54:17.285 - WARN - o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2025-05-21 12:54:17.399 - INFO - o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-21 12:54:17.903 - DEBUG - _.s.w.s.HandlerMapping.Mappings - 
+	o.c.c.AuthController:
+	{POST [/api/auth/login]}: authenticateAndGetToken(AuthRequest)
+	{POST [/api/auth/refresh-token]}: refreshToken(RefreshTokenRequest)
+2025-05-21 12:54:17.911 - DEBUG - _.s.w.s.HandlerMapping.Mappings - 
+	o.c.c.DishesController:
+	{GET [/api/dishes/category/{category}]}: getDishesByCategory(String)
+	{GET [/api/dishes/{size}/page/{page}]}: getDishesWithPagination(int,int)
+	{DELETE [/api/dishes/{id}]}: deleteDishes(long)
+	{GET [/api/dishes/sort/price/{order}]}: sortDishesByPrice(boolean)
+	{GET [/api/dishes/sort/name/{order}]}: sortDishesByName(boolean)
+	{POST [/api/dishes], consumes [multipart/form-data]}: createDishes(DishesCreateDTO,BindingResult,MultipartFile)
+	{GET [/api/dishes]}: getAllDishes()
+	{PUT [/api/dishes/{id}], consumes [multipart/form-data]}: updateDishes(long,DishesDto,BindingResult,MultipartFile)
+	{GET [/api/dishes/{id}]}: getDishesById(long)
+2025-05-21 12:54:17.917 - DEBUG - _.s.w.s.HandlerMapping.Mappings - 
+	o.c.c.OrderController:
+	{PUT [/api/orders/{id}/status]}: updateOrderStatus(long,Map)
+	{PUT [/api/orders/{orderId}/viewed]}: markOrderAsViewed(long)
+	{POST [/api/orders]}: createOrder(OrderCreateDTO,BindingResult)
+	{GET [/api/orders/my]}: getMyOrders(int,int)
+	{GET [/api/orders]}: getAllOrders(OrderStatus,int,int)
+	{GET [/api/orders/{id}]}: getOrderById(long)
+	{GET [/api/orders/my/archive]}: getMyArchiveOrders(int,int)
+	{PUT [/api/orders/my/{id}]}: updateMyOrder(long,OrderCreateDTO,BindingResult)
+	{PUT [/api/orders/{id}]}: updateOrder(long,OrderCreateDTO,BindingResult)
+	{DELETE [/api/orders/{id}]}: deleteOrder(long)
+	{GET [/api/orders/{size}/page/{page}]}: getAllOrdersWithPath(int,int,OrderStatus)
+	{GET [/api/orders/my/{size}/page/{page}]}: getMyOrdersWithPath(int,int)
+2025-05-21 12:54:17.922 - DEBUG - _.s.w.s.HandlerMapping.Mappings - 
+	o.c.c.ReviewController:
+	{GET [/api/reviews]}: getAllReviews()
+	{GET [/api/reviews/dish/{dishId}]}: getReviewsByDishId(Long)
+	{GET [/api/reviews/user/{userId}]}: getReviewsByUserId(Long)
+	{DELETE [/api/reviews/{id}]}: deleteReview(Long)
+	{GET [/api/reviews/sort]}: sortReviews(String,String)
+	{PUT [/api/reviews/{id}]}: updateReview(Long,ReviewUpdateDTO,BindingResult,Principal)
+	{POST [/api/reviews]}: addReview(ReviewCreateDTO,BindingResult)
+2025-05-21 12:54:17.924 - DEBUG - _.s.w.s.HandlerMapping.Mappings - 
+	o.c.c.TableController:
+	{GET [/api/tables/available]}: getAvailableTables()
+	{POST [/api/tables]}: createTable(TableCreateDto,BindingResult)
+	{GET [/api/tables/{id}]}: getTableById(long)
+	{GET [/api/tables]}: getAllTables()
+	{POST [/api/tables/{id}/reserve]}: reserveTable(long,TableReserveDto,BindingResult)
+	{DELETE [/api/tables/{id}/reserve]}: cancelReservation(long)
+	{PUT [/api/tables/{id}]}: updateTable(long,TableDto,BindingResult)
+	{DELETE [/api/tables/{id}]}: deleteTable(long)
+	{PUT [/api/tables/{id}/reserve]}: updateReservationTime(long,TableReserveDto,BindingResult)
+2025-05-21 12:54:17.928 - DEBUG - _.s.w.s.HandlerMapping.Mappings - 
+	o.c.c.UserController:
+	{PUT [/api/users/{id}]}: updateUser(long,UserDto)
+	{DELETE [/api/users/{id}]}: deleteUser(long)
+	{POST [/api/users]}: createUser(UserCreateDTO,BindingResult)
+	{GET [/api/users/{id}]}: getUserById(long)
+	{GET [/api/users/my-tables]}: getMyTables()
+	{GET [/api/users]}: getAllUsers()
+	{GET [/api/users/sorted/name]}: getUsersSortedByName()
+2025-05-21 12:54:17.931 - DEBUG - _.s.w.s.HandlerMapping.Mappings - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2025-05-21 12:54:17.934 - DEBUG - o.s.w.s.m.m.a.RequestMappingHandlerMapping - 48 mappings in 'requestMappingHandlerMapping'
+2025-05-21 12:54:17.941 - DEBUG - _.s.w.s.HandlerMapping.Mappings - 'beanNameHandlerMapping' {}
+2025-05-21 12:54:18.010 - DEBUG - _.s.w.s.HandlerMapping.Mappings - 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]], /uploads/**=ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], URL [file:uploads_data/], ServletContext [/]]}
+2025-05-21 12:54:18.049 - DEBUG - o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-05-21 12:54:18.145 - DEBUG - o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-05-21 12:54:18.180 - DEBUG - o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-05-21 12:54:18.291 - INFO - o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-21 12:54:18.308 - INFO - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-05-21 12:54:18.317 - INFO - org.course.CourseApplication - Started CourseApplication in 5.622 seconds (process running for 6.368)
+2025-05-21 12:54:45.577 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 12:54:45.577 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 12:55:15.591 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 12:55:15.591 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 12:55:45.602 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 12:55:45.602 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 12:56:15.607 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 12:56:15.607 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 12:56:45.619 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 12:56:45.619 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 12:57:02.557 - INFO - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-21 12:57:02.558 - INFO - o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-05-21 12:57:02.558 - DEBUG - o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-05-21 12:57:02.558 - DEBUG - o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-05-21 12:57:02.558 - DEBUG - o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-05-21 12:57:02.559 - DEBUG - o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@521f2a23
+2025-05-21 12:57:02.559 - DEBUG - o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@a6e0e5f
+2025-05-21 12:57:02.560 - DEBUG - o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-05-21 12:57:02.560 - INFO - o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-05-21 12:57:02.577 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /api/tables/available
+2025-05-21 12:57:02.596 - DEBUG - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-21 12:57:02.598 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /api/tables/available
+2025-05-21 12:57:02.600 - DEBUG - o.s.web.servlet.DispatcherServlet - GET "/api/tables/available", parameters={}
+2025-05-21 12:57:02.601 - DEBUG - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.course.controller.TableController#getAvailableTables()
+2025-05-21 12:57:02.635 - INFO - org.course.service.TableService - Отримання списку вільних столиків...
+2025-05-21 12:57:02.671 - INFO - org.course.service.TableService - Знайдено 1 вільних столиків
+2025-05-21 12:57:02.711 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-21 12:57:02.721 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{availableTables=[TableDto[id=3, tableNumber=3, seats=1, isReserved=false, reservedByUserId=null, re (truncated)...]
+2025-05-21 12:57:02.767 - DEBUG - o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-21 12:57:05.204 - DEBUG - o.s.security.web.FilterChainProxy - Securing POST /api/tables/3/reserve
+2025-05-21 12:57:05.267 - DEBUG - o.s.security.web.FilterChainProxy - Secured POST /api/tables/3/reserve
+2025-05-21 12:57:05.268 - DEBUG - o.s.web.servlet.DispatcherServlet - POST "/api/tables/3/reserve", parameters={}
+2025-05-21 12:57:05.268 - DEBUG - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.course.controller.TableController#reserveTable(long, TableReserveDto, BindingResult)
+2025-05-21 12:57:05.306 - DEBUG - o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [TableReserveDto[reservedUntil=2025-05-21T10:02]]
+2025-05-21 12:57:05.337 - INFO - org.course.service.TableService - Резервування столика з ID: 3 до 2025-05-21T10:02
+2025-05-21 12:57:05.347 - WARN - org.course.service.TableService - Час резервації має бути в майбутньому і мінімум на 5 хвилин вперед.
+2025-05-21 12:57:05.348 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-21 12:57:05.348 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{error=Час резервації має бути в майбутньому і мінімум на 5 хвилин вперед.}]
+2025-05-21 12:57:05.350 - DEBUG - o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2025-05-21 12:57:08.582 - DEBUG - o.s.security.web.FilterChainProxy - Securing POST /api/tables/3/reserve
+2025-05-21 12:57:08.593 - DEBUG - o.s.security.web.FilterChainProxy - Secured POST /api/tables/3/reserve
+2025-05-21 12:57:08.594 - DEBUG - o.s.web.servlet.DispatcherServlet - POST "/api/tables/3/reserve", parameters={}
+2025-05-21 12:57:08.594 - DEBUG - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.course.controller.TableController#reserveTable(long, TableReserveDto, BindingResult)
+2025-05-21 12:57:08.596 - DEBUG - o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [TableReserveDto[reservedUntil=2025-05-21T10:03]]
+2025-05-21 12:57:08.596 - INFO - org.course.service.TableService - Резервування столика з ID: 3 до 2025-05-21T10:03
+2025-05-21 12:57:08.688 - INFO - org.course.service.TableService - Стіл з ID 3 успішно зарезервовано користувачем test@t до 2025-05-21T10:03
+2025-05-21 12:57:08.695 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-21 12:57:08.695 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{reservedTable=TableDto[id=3, tableNumber=3, seats=1, isReserved=true, reservedByUserId=2, reservedA (truncated)...]
+2025-05-21 12:57:08.698 - DEBUG - o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-21 12:57:12.857 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /api/tables/available
+2025-05-21 12:57:12.858 - DEBUG - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-21 12:57:12.859 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /api/tables/available
+2025-05-21 12:57:12.859 - DEBUG - o.s.web.servlet.DispatcherServlet - GET "/api/tables/available", parameters={}
+2025-05-21 12:57:12.859 - DEBUG - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.course.controller.TableController#getAvailableTables()
+2025-05-21 12:57:12.860 - INFO - org.course.service.TableService - Отримання списку вільних столиків...
+2025-05-21 12:57:12.873 - INFO - org.course.service.TableService - Скасування резервації столика з ID 3 через закінчення часу резервації.
+2025-05-21 12:57:12.899 - INFO - org.course.service.TableService - Знайдено 1 вільних столиків
+2025-05-21 12:57:12.900 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-21 12:57:12.900 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{availableTables=[TableDto[id=3, tableNumber=3, seats=1, isReserved=false, reservedByUserId=null, re (truncated)...]
+2025-05-21 12:57:12.902 - DEBUG - o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-21 12:57:14.886 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /api/users/my-tables
+2025-05-21 12:57:14.903 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /api/users/my-tables
+2025-05-21 12:57:14.903 - DEBUG - o.s.web.servlet.DispatcherServlet - GET "/api/users/my-tables", parameters={}
+2025-05-21 12:57:14.904 - DEBUG - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.course.controller.UserController#getMyTables()
+2025-05-21 12:57:14.911 - INFO - org.course.service.TableService - Отримання списку всіх столиків...
+2025-05-21 12:57:14.919 - INFO - org.course.service.TableService - Знайдено 3 столиків
+2025-05-21 12:57:14.921 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-21 12:57:14.921 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{myTables=[TableDto[id=2, tableNumber=2, seats=4, isReserved=true, reservedByUserId=2, reservedAt=20 (truncated)...]
+2025-05-21 12:57:14.923 - DEBUG - o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-21 12:57:15.624 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 12:57:15.624 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 12:57:23.132 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /api/users/my-tables
+2025-05-21 12:57:23.154 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /api/users/my-tables
+2025-05-21 12:57:23.154 - DEBUG - o.s.web.servlet.DispatcherServlet - GET "/api/users/my-tables", parameters={}
+2025-05-21 12:57:23.154 - DEBUG - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.course.controller.UserController#getMyTables()
+2025-05-21 12:57:23.166 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-21 12:57:23.167 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{myTables=[TableDto[id=2, tableNumber=2, seats=4, isReserved=true, reservedByUserId=2, reservedAt=20 (truncated)...]
+2025-05-21 12:57:23.170 - DEBUG - o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-21 12:57:42.363 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /api/tables/available
+2025-05-21 12:57:42.364 - DEBUG - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-21 12:57:42.364 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /api/tables/available
+2025-05-21 12:57:42.364 - DEBUG - o.s.web.servlet.DispatcherServlet - GET "/api/tables/available", parameters={}
+2025-05-21 12:57:42.365 - DEBUG - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.course.controller.TableController#getAvailableTables()
+2025-05-21 12:57:42.366 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-21 12:57:42.367 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{availableTables=[TableDto[id=3, tableNumber=3, seats=1, isReserved=false, reservedByUserId=null, re (truncated)...]
+2025-05-21 12:57:42.368 - DEBUG - o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-21 12:57:44.544 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /api/tables/available
+2025-05-21 12:57:44.545 - DEBUG - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-21 12:57:44.546 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /api/tables/available
+2025-05-21 12:57:44.546 - DEBUG - o.s.web.servlet.DispatcherServlet - GET "/api/tables/available", parameters={}
+2025-05-21 12:57:44.546 - DEBUG - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.course.controller.TableController#getAvailableTables()
+2025-05-21 12:57:44.547 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-21 12:57:44.548 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{availableTables=[TableDto[id=3, tableNumber=3, seats=1, isReserved=false, reservedByUserId=null, re (truncated)...]
+2025-05-21 12:57:44.549 - DEBUG - o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-21 12:57:45.627 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 12:57:45.627 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 12:57:57.110 - DEBUG - o.s.security.web.FilterChainProxy - Securing POST /api/tables/3/reserve
+2025-05-21 12:57:57.122 - DEBUG - o.s.security.web.FilterChainProxy - Secured POST /api/tables/3/reserve
+2025-05-21 12:57:57.122 - DEBUG - o.s.web.servlet.DispatcherServlet - POST "/api/tables/3/reserve", parameters={}
+2025-05-21 12:57:57.123 - DEBUG - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.course.controller.TableController#reserveTable(long, TableReserveDto, BindingResult)
+2025-05-21 12:57:57.125 - DEBUG - o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [TableReserveDto[reservedUntil=2025-05-21T10:03]]
+2025-05-21 12:57:57.125 - INFO - org.course.service.TableService - Резервування столика з ID: 3 до 2025-05-21T10:03
+2025-05-21 12:57:57.155 - INFO - org.course.service.TableService - Стіл з ID 3 успішно зарезервовано користувачем test@t до 2025-05-21T10:03
+2025-05-21 12:57:57.156 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-21 12:57:57.156 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{reservedTable=TableDto[id=3, tableNumber=3, seats=1, isReserved=true, reservedByUserId=2, reservedA (truncated)...]
+2025-05-21 12:57:57.158 - DEBUG - o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-21 12:57:58.318 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /api/tables/available
+2025-05-21 12:57:58.320 - DEBUG - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-21 12:57:58.320 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /api/tables/available
+2025-05-21 12:57:58.320 - DEBUG - o.s.web.servlet.DispatcherServlet - GET "/api/tables/available", parameters={}
+2025-05-21 12:57:58.320 - DEBUG - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.course.controller.TableController#getAvailableTables()
+2025-05-21 12:57:58.321 - INFO - org.course.service.TableService - Отримання списку вільних столиків...
+2025-05-21 12:57:58.332 - INFO - org.course.service.TableService - Скасування резервації столика з ID 3 через закінчення часу резервації.
+2025-05-21 12:57:58.357 - INFO - org.course.service.TableService - Знайдено 1 вільних столиків
+2025-05-21 12:57:58.358 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-21 12:57:58.358 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{availableTables=[TableDto[id=3, tableNumber=3, seats=1, isReserved=false, reservedByUserId=null, re (truncated)...]
+2025-05-21 12:57:58.360 - DEBUG - o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-21 12:58:15.636 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 12:58:15.636 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 12:58:45.648 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 12:58:45.648 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 12:58:49.795 - DEBUG - o.s.security.web.FilterChainProxy - Securing POST /api/tables/3/reserve
+2025-05-21 12:58:49.805 - DEBUG - o.s.security.web.FilterChainProxy - Secured POST /api/tables/3/reserve
+2025-05-21 12:58:49.805 - DEBUG - o.s.web.servlet.DispatcherServlet - POST "/api/tables/3/reserve", parameters={}
+2025-05-21 12:58:49.805 - DEBUG - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.course.controller.TableController#reserveTable(long, TableReserveDto, BindingResult)
+2025-05-21 12:58:49.806 - DEBUG - o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [TableReserveDto[reservedUntil=2025-05-21T10:10]]
+2025-05-21 12:58:49.807 - INFO - org.course.service.TableService - Резервування столика з ID: 3 до 2025-05-21T10:10
+2025-05-21 12:58:49.837 - INFO - org.course.service.TableService - Стіл з ID 3 успішно зарезервовано користувачем test@t до 2025-05-21T10:10
+2025-05-21 12:58:49.838 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-21 12:58:49.838 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{reservedTable=TableDto[id=3, tableNumber=3, seats=1, isReserved=true, reservedByUserId=2, reservedA (truncated)...]
+2025-05-21 12:58:49.839 - DEBUG - o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-21 12:58:51.094 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /api/tables/available
+2025-05-21 12:58:51.095 - DEBUG - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-21 12:58:51.095 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /api/tables/available
+2025-05-21 12:58:51.095 - DEBUG - o.s.web.servlet.DispatcherServlet - GET "/api/tables/available", parameters={}
+2025-05-21 12:58:51.095 - DEBUG - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.course.controller.TableController#getAvailableTables()
+2025-05-21 12:58:51.096 - INFO - org.course.service.TableService - Отримання списку вільних столиків...
+2025-05-21 12:58:51.106 - INFO - org.course.service.TableService - Скасування резервації столика з ID 3 через закінчення часу резервації.
+2025-05-21 12:58:51.133 - INFO - org.course.service.TableService - Знайдено 1 вільних столиків
+2025-05-21 12:58:51.134 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-21 12:58:51.134 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{availableTables=[TableDto[id=3, tableNumber=3, seats=1, isReserved=false, reservedByUserId=null, re (truncated)...]
+2025-05-21 12:58:51.136 - DEBUG - o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-21 12:59:05.176 - DEBUG - o.s.security.web.FilterChainProxy - Securing POST /api/tables/3/reserve
+2025-05-21 12:59:05.188 - DEBUG - o.s.security.web.FilterChainProxy - Secured POST /api/tables/3/reserve
+2025-05-21 12:59:05.188 - DEBUG - o.s.web.servlet.DispatcherServlet - POST "/api/tables/3/reserve", parameters={}
+2025-05-21 12:59:05.188 - DEBUG - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.course.controller.TableController#reserveTable(long, TableReserveDto, BindingResult)
+2025-05-21 12:59:05.190 - DEBUG - o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [TableReserveDto[reservedUntil=2025-05-21T10:24]]
+2025-05-21 12:59:05.190 - INFO - org.course.service.TableService - Резервування столика з ID: 3 до 2025-05-21T10:24
+2025-05-21 12:59:05.219 - INFO - org.course.service.TableService - Стіл з ID 3 успішно зарезервовано користувачем test@t до 2025-05-21T10:24
+2025-05-21 12:59:05.220 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-21 12:59:05.221 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{reservedTable=TableDto[id=3, tableNumber=3, seats=1, isReserved=true, reservedByUserId=2, reservedA (truncated)...]
+2025-05-21 12:59:05.222 - DEBUG - o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-21 12:59:06.088 - DEBUG - o.s.security.web.FilterChainProxy - Securing GET /api/tables/available
+2025-05-21 12:59:06.088 - DEBUG - o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-05-21 12:59:06.089 - DEBUG - o.s.security.web.FilterChainProxy - Secured GET /api/tables/available
+2025-05-21 12:59:06.089 - DEBUG - o.s.web.servlet.DispatcherServlet - GET "/api/tables/available", parameters={}
+2025-05-21 12:59:06.089 - DEBUG - o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.course.controller.TableController#getAvailableTables()
+2025-05-21 12:59:06.090 - INFO - org.course.service.TableService - Отримання списку вільних столиків...
+2025-05-21 12:59:06.101 - INFO - org.course.service.TableService - Скасування резервації столика з ID 3 через закінчення часу резервації.
+2025-05-21 12:59:06.108 - INFO - org.course.service.TableService - Знайдено 1 вільних столиків
+2025-05-21 12:59:06.110 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-21 12:59:06.110 - DEBUG - o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{availableTables=[TableDto[id=3, tableNumber=3, seats=1, isReserved=false, reservedByUserId=null, re (truncated)...]
+2025-05-21 12:59:06.111 - DEBUG - o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-21 12:59:15.651 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 12:59:15.651 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-21 12:59:45.660 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-21 12:59:45.660 - DEBUG - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
